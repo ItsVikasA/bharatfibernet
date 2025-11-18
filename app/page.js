@@ -48,94 +48,82 @@ const page = () => {
     </section>
 
       {/* About Section Start */}
-      <section className="about-section fix section-padding">
-          <div className="container">
-            {/* Heading + subheading */}
-            <div className="row justify-content-center">
-              <div className="col-lg-10">
-                <div className="section-title text-center">
-                  <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                    Andhra &amp; Telangana’s Most Trusted <br />
-                    Enterprise IT Network
-                  </h2>
-                  <p className="mt-3 wow fadeInUp" data-wow-delay=".3s">
-                    Engineered for uptime, built for speed, trusted by businesses.
-                  </p>
-                </div>
-              </div>
-            </div>
+<section
+  className="about-section fix section-padding"
+  style={{
+    backgroundImage: 'url("/assets/img/background/pattern-12.png")',
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="container">
+    {/* Heading + Subheading */}
+    <div className="row justify-content-center">
+      <div className="col-lg-10">
+        <div className="section-title text-center">
+          <h2 className="wow fadeInUp" data-wow-delay=".2s">
+            Andhra & Telangana’s Most Trusted <br />
+            Enterprise IT Network
+          </h2>
+          <p className="mt-3 wow fadeInUp" data-wow-delay=".3s">
+            Engineered for uptime, built for speed, trusted by businesses.
+          </p>
+        </div>
+      </div>
+    </div>
 
-            {/* Feature “table” as cards */}
-            <div className="row feature-row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3 mt-4">
-              <div className="col wow fadeInUp" data-wow-delay=".2s">
-                <div className="feature-card h-100">
-                  <h5>
-                    Dual-Link <br /> Redundancy
-                  </h5>
-                  <p>
-                    Every connection is backed by two independent fiber links – if one
-                    fails, the other takes over instantly.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col wow fadeInUp" data-wow-delay=".3s">
-                <div className="feature-card h-100">
-                  <h5>
-                    Multi-Gateway <br /> Backbone
-                  </h5>
-                  <p>
-                    Connected through <strong>5–6 gateways</strong> for seamless routing,
-                    reliability, and lower latency.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col wow fadeInUp" data-wow-delay=".4s">
-                <div className="feature-card h-100">
-                  <h5>
-                    Premium <br /> Routing
-                  </h5>
-                  <p>
-                    Traffic is carried on priority routes to ensure consistent speeds and
-                    ultra-low latency.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col wow fadeInUp" data-wow-delay=".5s">
-                <div className="feature-card h-100">
-                  <h5>
-                    Dedicated <br /> Business Support
-                  </h5>
-                  <p>
-                    With local account managers and 24×7 technical assistance, we keep
-                    you always connected.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col wow fadeInUp" data-wow-delay=".6s">
-                <div className="feature-card h-100">
-                  <h5>
-                    Enterprise-Grade <br /> Security
-                  </h5>
-                  <p>
-                    Robust protection with firewalls, DNS security, and managed threat
-                    prevention.
-                  </p>
-                </div>
-              </div>
-            </div>
+    {/* Feature Cards */}
+    <div className="row feature-row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3 mt-4">
+      {[
+        {
+          title: "Dual-Link Redundancy",
+          text: "Every connection is backed by two independent fiber links – if one fails, the other takes over instantly.",
+          delay: ".2s",
+        },
+        {
+          title: "Multi-Gateway Backbone",
+          text: "Connected through 5–6 gateways for seamless routing, reliability, and lower latency.",
+          delay: ".3s",
+        },
+        {
+          title: "Premium Routing",
+          text: "Traffic is carried on priority routes to ensure consistent speeds and ultra-low latency.",
+          delay: ".4s",
+        },
+        {
+          title: "Dedicated Business Support",
+          text: "With local account managers and 24×7 technical assistance, we keep you always connected.",
+          delay: ".5s",
+        },
+        {
+          title: "Enterprise-Grade Security",
+          text: "Robust protection with firewalls, DNS security, and managed threat prevention.",
+          delay: ".6s",
+        },
+      ].map((item, i) => (
+        <div className="col wow fadeInUp" data-wow-delay={item.delay} key={i}>
+          <div className="feature-card h-100">
+            <h5
+              dangerouslySetInnerHTML={{
+                __html: item.title.replace(" ", "<br />"),
+              }}
+            />
+            <p>{item.text}</p>
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Service Section Start */}
       <SERVICES_SECTION />
       
       
       {/* Team Section Start */}
       <section className="plan-section fix section-padding">
-  <div className="container">
+      <div className="container">
     {/* Heading */}
     <div className="section-title text-center">
       <h2 className="wow fadeInUp" data-wow-delay=".2s">

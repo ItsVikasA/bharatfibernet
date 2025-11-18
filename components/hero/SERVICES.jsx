@@ -15,7 +15,15 @@ export default function ServicesSection() {
     SERVICES.find((s) => s.id === activeId) || SERVICES[0];
 
   return (
-    <section className="service-section section-padding pt-0">
+    <section
+      className="service-section section-padding pt-5"
+      style={{
+        backgroundImage: 'url("/assets/img/background/pattern-3.png")',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top center",
+      }}
+    >
       <div className="container">
         <div className="section-title text-center">
           <h2 className="wow fadeInUp" data-wow-delay=".2s">
@@ -28,7 +36,10 @@ export default function ServicesSection() {
             cloud, and security services that power digital transformation.
           </p>
 
-          <p className="mt-2 fw-semibold wow fadeInUp" data-wow-delay=".35s">
+          <p
+            className="mt-2 fw-semibold wow fadeInUp services-subtitle"
+            data-wow-delay=".35s"
+          >
             Our services include
           </p>
         </div>
@@ -59,7 +70,7 @@ export default function ServicesSection() {
         <div className="row justify-content-center mt-4">
           <div className="col-lg-10">
             <div className="service-detail-card">
-              <div className="row">
+              <div className="row align-items-center">
                 <div className="col-md-4 text-md-end text-start mb-3 mb-md-0">
                   <p className="detail-heading">Service</p>
                   <p className="detail-title">{activeService.title}</p>
