@@ -26,7 +26,7 @@ export default function Career() {
                   Leading India's Next-Gen Internet Solutions
                 </h2>
                 
-                <h3 className="mb-4" style={{ fontSize: '2rem', fontWeight: '600', color: '#79ff5b' }}>
+                <h3 className="mb-4" style={{ fontSize: '2rem', fontWeight: '600', color: '#28a745' }}>
                   Build the Future of Connectivity with Us
                 </h3>
                 
@@ -55,7 +55,7 @@ export default function Career() {
                       fontSize: '1.1rem',
                       fontWeight: '600',
                       borderRadius: '8px',
-                      background: 'linear-gradient(135deg, #fd9330 0%, #79ff5b 100%)',
+                      background: 'linear-gradient(135deg, #fd9330 0%, #28a745 100%)',
                       border: 'none',
                       color: 'white',
                       textDecoration: 'none',

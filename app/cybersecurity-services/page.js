@@ -40,7 +40,7 @@ export default function CybersecurityServices() {
           {/* Main Title */}
           <div className="row">
             <div className="col-12 text-center mb-5">
-                <h2 style={{ fontSize: '2.5rem', fontWeight: '400', lineHeight: '1.3', color: '#79ff5b' }}>
+                <h2 style={{ fontSize: '2.5rem', fontWeight: '400', lineHeight: '1.3', color: '#28a745' }}>
                 Intelligent protection for an always-connected world.
               </h2>
             </div>
@@ -61,7 +61,7 @@ export default function CybersecurityServices() {
             {/* Feature 2 */}
             <div className="col-12 mb-5">
               <div style={{ textAlign: 'center' }}>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#79ff5b' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#28a745' }}>
                   Design Security Architecture Built for Resilience
                 </h3>
                 <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -83,7 +83,7 @@ export default function CybersecurityServices() {
             {/* Feature 4 */}
             <div className="col-12 mb-5">
               <div style={{ textAlign: 'center' }}>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#79ff5b' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#28a745' }}>
                   Protect Devices and Networks with Endpoint Security
                 </h3>
                 <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -144,9 +144,9 @@ export default function CybersecurityServices() {
             {/* Capability 2 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#79ff5b', background: '#f0ffe8', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-cogs"></i></div>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#28a745', background: '#f0ffe8', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-cogs"></i></div>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#79ff5b' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#28a745' }}>
                     24×7 Monitoring and Rapid Response
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>
@@ -174,9 +174,9 @@ export default function CybersecurityServices() {
             {/* Capability 4 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#79ff5b', background: '#f0ffe8', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-laptop"></i></div>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#28a745', background: '#f0ffe8', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-laptop"></i></div>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#79ff5b' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#28a745' }}>
                     Endpoint Detection and Device Security
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>

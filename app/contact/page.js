@@ -37,7 +37,7 @@ const Page = () => {
 
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2.5rem', textAlign: 'center', color: '#79ff5b' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2.5rem', textAlign: 'center', color: '#28a745' }}>
                 Select Your Option And Get In Touch Instantly
               </h2>
               
@@ -475,8 +475,8 @@ const Page = () => {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-10px)';
-                e.currentTarget.style.boxShadow = '0 20px 60px rgba(121, 255, 91, 0.2)';
-                e.currentTarget.style.borderColor = '#79ff5b';
+                e.currentTarget.style.boxShadow = '0 20px 60px rgba(40, 167, 69, 0.2)';
+                e.currentTarget.style.borderColor = '#28a745';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
@@ -487,13 +487,13 @@ const Page = () => {
                   width: '70px',
                   height: '70px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #79ff5b 0%, #84ff5b 100%)',
+                  background: 'linear-gradient(135deg, #28a745 0%, #34d058 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   marginBottom: '1.5rem',
-                  boxShadow: '0 8px 20px rgba(121, 255, 91, 0.3)'
-                }}>
+                  boxShadow: '0 8px 20px rgba(40, 167, 69, 0.3)'
+                }})>
                   <i className="fas fa-map-marker-alt" style={{ fontSize: '1.8rem', color: '#fff' }}></i>
                 </div>
                 
@@ -501,7 +501,7 @@ const Page = () => {
                   fontSize: '1.8rem', 
                   fontWeight: '700', 
                   marginBottom: '1.5rem',
-                  color: '#79ff5b'
+                  color: '#28a745'
                 }}>
                   Location
                 </h3>
@@ -675,7 +675,7 @@ const Page = () => {
                       transition: 'all 0.3s ease'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = '#79ff5b';
+                      e.currentTarget.style.background = '#28a745';
                       e.currentTarget.querySelector('i').style.color = '#fff';
                     }}
                     onMouseLeave={(e) => {

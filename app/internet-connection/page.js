@@ -24,7 +24,7 @@ export default function InternetConnection() {
                 Bharat Fibernet Help Guide
               </h1>
               
-              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#79ff5b' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#28a745' }}>
                 Simple fixes for common internet issues
               </h2>
               

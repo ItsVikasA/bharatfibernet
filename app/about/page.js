@@ -54,7 +54,7 @@ const page = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: '#79ff5b' }}>
+              <h2 className="wow fadeInUp" data-wow-delay=".3s">
                 We Believe in People, Not Just Technology
               </h2>
               <p className="mt-4 wow fadeInUp" data-wow-delay=".4s" style={{fontSize: '1.1rem'}}>
@@ -80,10 +80,10 @@ const page = () => {
       <section className="service-section fix section-padding pt-0 bg-light">
         <div className="container">
           <div className="section-title text-center mb-5">
-            <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: '#fd9330' }}>
+            <h2 className="wow fadeInUp" data-wow-delay=".3s">
               Our Promise
             </h2>
-            <h4 className="wow fadeInUp mt-3" data-wow-delay=".4s" style={{ color: '#79ff5b' }}>
+            <h4 className="wow fadeInUp mt-3" data-wow-delay=".4s">
               Powering Your Digital Growth, Every Step of the Way
             </h4>
           </div>

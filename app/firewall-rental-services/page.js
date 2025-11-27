@@ -40,7 +40,7 @@ export default function FirewallRentalServices() {
           {/* Main Title */}
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 style={{ fontSize: '3rem', fontWeight: '500', lineHeight: '1.3', marginBottom: '2rem', color: '#79ff5b' }}>
+              <h2 style={{ fontSize: '3rem', fontWeight: '500', lineHeight: '1.3', marginBottom: '2rem', color: '#28a745' }}>
                 Instant protection. Zero complexity. Maximum control.
               </h2>
             </div>

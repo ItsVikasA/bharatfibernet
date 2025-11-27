@@ -137,7 +137,7 @@ const page = () => {
               <h2 className="mb-4" style={{fontSize: '2.5rem', fontWeight: '700', color: '#fd9330'}}>
                 Secure & Scalable Digital Network Design and Implementation
               </h2>
-              <h4 className="mb-4" style={{fontWeight: '700', fontSize: '1.3rem', color: '#79ff5b'}}>
+              <h4 className="mb-4" style={{fontWeight: '700', fontSize: '1.3rem', color: '#28a745'}}>
                 The Backbone of Modern Enterprises
               </h4>
               <p style={{fontSize: '1.1rem', lineHeight: '1.8', maxWidth: '900px', margin: '0 auto'}}>
@@ -184,7 +184,7 @@ const page = () => {
             </div>
             <div className="col-lg-7">
               <div className="content-block mb-5">
-                <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem', color: '#79ff5b'}}>
+                <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem', color: '#28a745'}}>
                   Scalable Infrastructure That Grows With Demand
                 </h3>
                 <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
@@ -370,9 +370,9 @@ const page = () => {
             {/* Centralized Network Management */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem', color: '#79ff5b', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-globe"></i></div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-globe"></i></div>
                 <div>
-                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#79ff5b'}}>
+                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#28a745'}}>
                     Centralized Network Management
                   </h4>
                   <p style={{fontSize: '1rem', lineHeight: '1.7', color: '#555'}}>
@@ -400,9 +400,9 @@ const page = () => {
             {/* Intelligent Resource Utilization */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem', color: '#79ff5b', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-lightbulb"></i></div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-lightbulb"></i></div>
                 <div>
-                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#79ff5b'}}>
+                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#28a745'}}>
                     Intelligent Resource Utilization
                   </h4>
                   <p style={{fontSize: '1rem', lineHeight: '1.7', color: '#555'}}>
@@ -430,9 +430,9 @@ const page = () => {
             {/* 24×7 Monitoring & Real-Time Alerts */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem', color: '#79ff5b', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-clock"></i></div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-clock"></i></div>
                 <div>
-                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#79ff5b'}}>
+                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#28a745'}}>
                     24×7 Monitoring & Real-Time Alerts
                   </h4>
                   <p style={{fontSize: '1rem', lineHeight: '1.7', color: '#555'}}>
@@ -460,9 +460,9 @@ const page = () => {
             {/* Compliance-Driven Infrastructure */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem', color: '#79ff5b', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-shield-alt"></i></div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-shield-alt"></i></div>
                 <div>
-                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#79ff5b'}}>
+                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#28a745'}}>
                     Compliance-Driven Infrastructure
                   </h4>
                   <p style={{fontSize: '1rem', lineHeight: '1.7', color: '#555'}}>
@@ -490,9 +490,9 @@ const page = () => {
             {/* Dedicated Technical Assistance */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem', color: '#79ff5b', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-user-cog"></i></div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745', background: '#f0ffe8', padding: '15px', borderRadius: '10px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fas fa-user-cog"></i></div>
                 <div>
-                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#79ff5b'}}>
+                  <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem', color: '#28a745'}}>
                     Dedicated Technical Assistance
                   </h4>
                   <p style={{fontSize: '1rem', lineHeight: '1.7', color: '#555'}}>
@@ -528,7 +528,7 @@ const page = () => {
 
       {/* Screen 6: CTA Section */}
       <section className="cta-final-section section-padding" style={{
-        background: 'linear-gradient(135deg, #fd9330 0%, #79ff5b 100%)',
+        background: 'linear-gradient(135deg, #fd9330 0%, #28a745 100%)',
         position: 'relative'
       }}>
         <div className="container">

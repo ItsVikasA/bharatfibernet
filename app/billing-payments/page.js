@@ -25,7 +25,7 @@ export default function BillingPayments() {
                 Bharat Fibernet Help Guide
               </h1>
               
-              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#79ff5b' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#28a745' }}>
                 Understand your bills. Manage your payments. Stay in control.
               </h2>
               

@@ -22,7 +22,7 @@ export default function GamingConnectivity() {
           <div className="row">
             <div className="col-12">
               <div className="about-content text-center">
-                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#79ff5b' }}>
+                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#28a745' }}>
                   Built for Speed.<br />Tuned for Real-Time.
                 </h2>
                 <p style={{ fontSize: '1.1rem', color: '#333', maxWidth: '1000px', margin: '0 auto' }}>
