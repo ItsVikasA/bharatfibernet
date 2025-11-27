@@ -13,12 +13,16 @@ export default function EventConnectivitySolutions() {
       <Breadcrumb pageName="Event Connectivity Solutions" />
 
       {/* Screen 1 - Hero Section */}
-      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
+      <section className="about-section section-padding" style={{ 
+        backgroundImage: 'url("/assets/img/background/pattern-13.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="about-content text-center">
-                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2' }}>
+                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#79ff5b' }}>
                   Where seamless experiences meet seamless connectivity.
                 </h2>
                 <p style={{ fontSize: '1.1rem', color: '#333', maxWidth: '1000px', margin: '0 auto' }}>
@@ -36,7 +40,7 @@ export default function EventConnectivitySolutions() {
           {/* Main Title */}
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 style={{ fontSize: '3rem', fontWeight: '500', lineHeight: '1.3', marginBottom: '2rem' }}>
+              <h2 style={{ fontSize: '3rem', fontWeight: '500', lineHeight: '1.3', marginBottom: '2rem', color: '#fd9330' }}>
                 Instant setup. Reliable performance. Complete coverage.
               </h2>
             </div>

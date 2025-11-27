@@ -72,7 +72,7 @@ const page = () => {
                           borderRadius: '5px 0 0 5px'
                         }}
                       >
-                        <option value="+91">🇮🇳 91</option>
+                        <option value="+91">+91</option>
                       </select>
                       <input 
                         type="tel" 
