@@ -214,9 +214,8 @@ const Sidebar = ({ sidebarToggle, close, menu }) => {
                 <MobileMenu menu={menu} />
               </div>
               <p className="text d-none d-xl-block mb-5">
-                Nullam dignissim, ante scelerisque the is euismod fermentum odio
-                sem semper the is erat, a feugiat leo urna eget eros. Duis
-                Aenean a imperdiet risus.
+                Connecting Andhra Pradesh and Telangana with high-speed fiber internet solutions. 
+                From homes to enterprises, we deliver reliable connectivity that powers your digital life.
               </p>
               <div className="offcanvas__contact">
                 <h4>Contact Info</h4>
@@ -226,8 +225,8 @@ const Sidebar = ({ sidebarToggle, close, menu }) => {
                       <i className="fal fa-map-marker-alt" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                        Main Street, Melbourne, Australia
+                      <a target="_blank" href="https://maps.google.com/?q=Jyothi+Flora+Kavuri+Hills+Madhapur+Hyderabad">
+                        Jyothi Flora, 4th Floor, Kavuri Hills, Phase 2, Madhapur, Hyderabad, Telangana 500081
                       </a>
                     </div>
                   </li>
@@ -236,7 +235,7 @@ const Sidebar = ({ sidebarToggle, close, menu }) => {
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">info@example.com</a>
+                      <a href="mailto:info@bharatvoip.com">info@bharatvoip.com</a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -245,7 +244,7 @@ const Sidebar = ({ sidebarToggle, close, menu }) => {
                     </div>
                     <div className="offcanvas__contact-text">
                       <a target="_blank" href="#">
-                        Mod-friday, 09am -05pm
+                        Mon-Friday, 09am - 06pm
                       </a>
                     </div>
                   </li>
@@ -254,7 +253,7 @@ const Sidebar = ({ sidebarToggle, close, menu }) => {
                       <i className="far fa-phone" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
+                      <a href="tel:+917799906341">+91 7799906341</a>
                     </div>
                   </li>
                 </ul>
