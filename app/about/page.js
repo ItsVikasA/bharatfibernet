@@ -88,7 +88,7 @@ const page = () => {
             </h4>
           </div>
           
-          <div className="row g-4">
+          <div className="row g-4 justify-content-center">
             <div className="col-lg-4 col-md-6">
               <div className="service-box-items wow fadeInUp" data-wow-delay=".2s">
                 <div className="icon">
