@@ -30,7 +30,7 @@ const Page = () => {
                 maxWidth: '1000px', 
                 margin: '0 auto 3rem'
               }}>
-                We're here to make your connection strong and reliable. Whether you need broadband support, enterprise solutions, or expert consultation, our team is just a message away.
+                We're here to make your connection strong and reliable. Whether you need broadband support, enterprise solutions, or expert consultation, our dedicated team is just a message away.
               </p>
             </div>
           </div>
