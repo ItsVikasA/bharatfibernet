@@ -342,98 +342,372 @@ const Page = () => {
         </div>
       </section>
 
-      {/* Hotline and Location Section */}
-      <section className="section-padding">
+      {/* Contact Information Cards Section */}
+      <section className="section-padding" style={{ 
+        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'
+      }}>
         <div className="container">
-          <div className="row">
-            {/* Left Column - Hotline */}
-            <div className="col-lg-6">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2rem', color: '#fd9330' }}>
-                Hotline
-              </h2>
-              
-              <div style={{ marginBottom: '3rem' }}>
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>
-                  For General Enquiries (Office Hours Only):
-                </h4>
-                <p style={{ fontSize: '1.05rem', color: '#333', marginBottom: '2rem' }}>
-                  <strong>Call/WhatsApp:</strong><br />
-                  <a href="tel:+917799906341" style={{ color: '#333', textDecoration: 'none' }}>+91 7799906341</a><br />
-                  <a href="tel:04042027737" style={{ color: '#333', textDecoration: 'none' }}>040-42027737</a>
-                </p>
-              </div>
+          <div className="row g-4 mb-5">
+            {/* Hotline Card */}
+            <div className="col-lg-4 col-md-6">
+              <div style={{
+                background: '#fff',
+                borderRadius: '20px',
+                padding: '2.5rem',
+                boxShadow: '0 10px 40px rgba(0,0,0,0.08)',
+                height: '100%',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                border: '2px solid transparent',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 20px 60px rgba(253, 147, 48, 0.2)';
+                e.currentTarget.style.borderColor = '#fd9330';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 10px 40px rgba(0,0,0,0.08)';
+                e.currentTarget.style.borderColor = 'transparent';
+              }}>
+                <div style={{
+                  width: '70px',
+                  height: '70px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, #fd9330 0%, #fc9546 100%)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginBottom: '1.5rem',
+                  boxShadow: '0 8px 20px rgba(253, 147, 48, 0.3)'
+                }}>
+                  <i className="fas fa-phone-alt" style={{ fontSize: '1.8rem', color: '#fff' }}></i>
+                </div>
+                
+                <h3 style={{ 
+                  fontSize: '1.8rem', 
+                  fontWeight: '700', 
+                  marginBottom: '1.5rem',
+                  color: '#fd9330'
+                }}>
+                  Hotline
+                </h3>
+                
+                <div style={{ marginBottom: '2rem' }}>
+                  <h5 style={{ 
+                    fontSize: '1rem', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem',
+                    color: '#333',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px'
+                  }}>
+                    For General Enquiries
+                  </h5>
+                  <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '0.8rem' }}>
+                    (Office Hours Only)
+                  </p>
+                  <div style={{ marginBottom: '0.5rem' }}>
+                    <a href="tel:+917799906341" style={{ 
+                      fontSize: '1.2rem', 
+                      color: '#333', 
+                      textDecoration: 'none',
+                      fontWeight: '600',
+                      display: 'block',
+                      marginBottom: '0.3rem'
+                    }}>
+                      +91 7799906341
+                    </a>
+                    <a href="tel:04042027737" style={{ 
+                      fontSize: '1.2rem', 
+                      color: '#333', 
+                      textDecoration: 'none',
+                      fontWeight: '600',
+                      display: 'block'
+                    }}>
+                      040-42027737
+                    </a>
+                  </div>
+                </div>
 
-              <div>
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>
-                  For Technical Support (24/7):
-                </h4>
-                <p style={{ fontSize: '1.05rem', color: '#333', marginBottom: '0.5rem' }}>
-                  <strong>Call:</strong>
-                </p>
-                <p style={{ fontSize: '1.05rem', color: '#333', marginBottom: '0' }}>
-                  <a href="tel:+917799906341" style={{ color: '#333', textDecoration: 'none' }}>+91 7799906341</a><br />
-                  <span style={{ fontSize: '0.95rem', color: '#666' }}>Available 24 hours for urgent technical issues</span>
-                </p>
+                <div style={{
+                  borderTop: '2px solid #f0f0f0',
+                  paddingTop: '1.5rem'
+                }}>
+                  <h5 style={{ 
+                    fontSize: '1rem', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem',
+                    color: '#333',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px'
+                  }}>
+                    Technical Support 24/7
+                  </h5>
+                  <a href="tel:+917799906341" style={{ 
+                    fontSize: '1.2rem', 
+                    color: '#333', 
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    display: 'block',
+                    marginBottom: '0.5rem'
+                  }}>
+                    +91 7799906341
+                  </a>
+                  <p style={{ fontSize: '0.85rem', color: '#666', margin: 0 }}>
+                    Available 24 hours for urgent technical issues
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Right Column - Location */}
-            <div className="col-lg-6">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2rem', textAlign: 'right', color: '#79ff5b' }}>
-                Location
-              </h2>
-              
-              <div style={{ marginBottom: '3rem' }}>
-                <p style={{ fontSize: '1.05rem', color: '#333', lineHeight: '1.8', textAlign: 'right', marginBottom: '0.5rem' }}>
-                  <strong>Jyothi Flora, 4th Floor</strong>
-                </p>
-                <p style={{ fontSize: '1.05rem', color: '#333', lineHeight: '1.8', textAlign: 'right' }}>
-                  Kavuri Hills, Phase 2<br />
-                  Madhapur<br />
-                  Hyderabad, Telangana<br />
-                  500081
-                </p>
-              </div>
+            {/* Location Card */}
+            <div className="col-lg-4 col-md-6">
+              <div style={{
+                background: '#fff',
+                borderRadius: '20px',
+                padding: '2.5rem',
+                boxShadow: '0 10px 40px rgba(0,0,0,0.08)',
+                height: '100%',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                border: '2px solid transparent',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 20px 60px rgba(121, 255, 91, 0.2)';
+                e.currentTarget.style.borderColor = '#79ff5b';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 10px 40px rgba(0,0,0,0.08)';
+                e.currentTarget.style.borderColor = 'transparent';
+              }}>
+                <div style={{
+                  width: '70px',
+                  height: '70px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, #79ff5b 0%, #84ff5b 100%)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginBottom: '1.5rem',
+                  boxShadow: '0 8px 20px rgba(121, 255, 91, 0.3)'
+                }}>
+                  <i className="fas fa-map-marker-alt" style={{ fontSize: '1.8rem', color: '#fff' }}></i>
+                </div>
+                
+                <h3 style={{ 
+                  fontSize: '1.8rem', 
+                  fontWeight: '700', 
+                  marginBottom: '1.5rem',
+                  color: '#79ff5b'
+                }}>
+                  Location
+                </h3>
+                
+                <div style={{ marginBottom: '2rem' }}>
+                  <p style={{ 
+                    fontSize: '1.1rem', 
+                    fontWeight: '700', 
+                    marginBottom: '0.8rem',
+                    color: '#333'
+                  }}>
+                    Jyothi Flora, 4th Floor
+                  </p>
+                  <p style={{ 
+                    fontSize: '1rem', 
+                    color: '#666', 
+                    lineHeight: '1.8',
+                    marginBottom: 0
+                  }}>
+                    Kavuri Hills, Phase 2<br />
+                    Madhapur<br />
+                    Hyderabad, Telangana<br />
+                    500081
+                  </p>
+                </div>
 
-              <div>
-                <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', textAlign: 'right' }}>
-                  Office Hours:
-                </h2>
-                <p style={{ fontSize: '1.05rem', color: '#333', lineHeight: '1.8', textAlign: 'right', marginBottom: '0.5rem' }}>
-                  <strong>Mon – Fri:</strong> 9:00 AM – 6:00 PM
-                </p>
-                <p style={{ fontSize: '1.05rem', color: '#333', lineHeight: '1.8', textAlign: 'right' }}>
-                  <strong>Sat, Sun & Public Holidays:</strong> Closed
-                </p>
-                <p style={{ fontSize: '0.95rem', color: '#666', lineHeight: '1.6', textAlign: 'right', marginTop: '0.5rem' }}>
-                  (Technical support available 24/7)
-                </p>
+                <div style={{
+                  borderTop: '2px solid #f0f0f0',
+                  paddingTop: '1.5rem'
+                }}>
+                  <h5 style={{ 
+                    fontSize: '1rem', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem',
+                    color: '#333',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px'
+                  }}>
+                    Office Hours
+                  </h5>
+                  <p style={{ fontSize: '1rem', color: '#333', marginBottom: '0.5rem', fontWeight: '600' }}>
+                    Mon – Fri: <span style={{ fontWeight: '400', color: '#666' }}>9:00 AM – 6:00 PM</span>
+                  </p>
+                  <p style={{ fontSize: '1rem', color: '#333', marginBottom: '0.5rem', fontWeight: '600' }}>
+                    Sat, Sun & Holidays: <span style={{ fontWeight: '400', color: '#666' }}>Closed</span>
+                  </p>
+                  <p style={{ fontSize: '0.85rem', color: '#666', margin: 0, fontStyle: 'italic' }}>
+                    (Technical support available 24/7)
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Email Section */}
-          <div className="row" style={{ marginTop: '4rem' }}>
-            <div className="col-12 text-center">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#fd9330' }}>
-                Email
-              </h2>
-              <p style={{ fontSize: '1.05rem', color: '#333', marginBottom: '0.5rem' }}>
-                <strong>General Inquiries & Support:</strong>
-              </p>
-              <a 
-                href="mailto:info@bharatvoip.com" 
-                style={{ 
-                  fontSize: '1.2rem', 
-                  color: '#0066cc', 
-                  textDecoration: 'underline' 
-                }}
-              >
-                info@bharatvoip.com
-              </a>
-              <p style={{ fontSize: '0.95rem', color: '#666', marginTop: '1rem' }}>
-                We typically respond within 24 business hours
-              </p>
+            {/* Email Card */}
+            <div className="col-lg-4 col-md-6">
+              <div style={{
+                background: '#fff',
+                borderRadius: '20px',
+                padding: '2.5rem',
+                boxShadow: '0 10px 40px rgba(0,0,0,0.08)',
+                height: '100%',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                border: '2px solid transparent',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 20px 60px rgba(253, 147, 48, 0.2)';
+                e.currentTarget.style.borderColor = '#fd9330';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 10px 40px rgba(0,0,0,0.08)';
+                e.currentTarget.style.borderColor = 'transparent';
+              }}>
+                <div style={{
+                  width: '70px',
+                  height: '70px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, #fd9330 0%, #fc9546 100%)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginBottom: '1.5rem',
+                  boxShadow: '0 8px 20px rgba(253, 147, 48, 0.3)'
+                }}>
+                  <i className="fas fa-envelope" style={{ fontSize: '1.8rem', color: '#fff' }}></i>
+                </div>
+                
+                <h3 style={{ 
+                  fontSize: '1.8rem', 
+                  fontWeight: '700', 
+                  marginBottom: '1.5rem',
+                  color: '#fd9330'
+                }}>
+                  Email
+                </h3>
+                
+                <div style={{ marginBottom: '2rem' }}>
+                  <h5 style={{ 
+                    fontSize: '1rem', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem',
+                    color: '#333',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px'
+                  }}>
+                    General Inquiries & Support
+                  </h5>
+                  <a 
+                    href="mailto:info@bharatvoip.com" 
+                    style={{ 
+                      fontSize: '1.3rem', 
+                      color: '#0066cc', 
+                      textDecoration: 'none',
+                      fontWeight: '600',
+                      display: 'block',
+                      marginBottom: '1rem',
+                      transition: 'color 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.color = '#fd9330'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#0066cc'}
+                  >
+                    info@bharatvoip.com
+                  </a>
+                  <p style={{ fontSize: '0.9rem', color: '#666', margin: 0 }}>
+                    We typically respond within 24 business hours
+                  </p>
+                </div>
+
+                <div style={{
+                  borderTop: '2px solid #f0f0f0',
+                  paddingTop: '1.5rem',
+                  textAlign: 'center'
+                }}>
+                  <div style={{
+                    display: 'inline-flex',
+                    gap: '1rem',
+                    marginTop: '0.5rem'
+                  }}>
+                    <div style={{
+                      width: '45px',
+                      height: '45px',
+                      borderRadius: '50%',
+                      background: '#f0f0f0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = '#fd9330';
+                      e.currentTarget.querySelector('i').style.color = '#fff';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = '#f0f0f0';
+                      e.currentTarget.querySelector('i').style.color = '#666';
+                    }}>
+                      <i className="fab fa-whatsapp" style={{ fontSize: '1.3rem', color: '#666', transition: 'color 0.3s ease' }}></i>
+                    </div>
+                    <div style={{
+                      width: '45px',
+                      height: '45px',
+                      borderRadius: '50%',
+                      background: '#f0f0f0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = '#79ff5b';
+                      e.currentTarget.querySelector('i').style.color = '#fff';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = '#f0f0f0';
+                      e.currentTarget.querySelector('i').style.color = '#666';
+                    }}>
+                      <i className="fab fa-facebook-f" style={{ fontSize: '1.3rem', color: '#666', transition: 'color 0.3s ease' }}></i>
+                    </div>
+                    <div style={{
+                      width: '45px',
+                      height: '45px',
+                      borderRadius: '50%',
+                      background: '#f0f0f0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = '#fd9330';
+                      e.currentTarget.querySelector('i').style.color = '#fff';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = '#f0f0f0';
+                      e.currentTarget.querySelector('i').style.color = '#666';
+                    }}>
+                      <i className="fab fa-twitter" style={{ fontSize: '1.3rem', color: '#666', transition: 'color 0.3s ease' }}></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
