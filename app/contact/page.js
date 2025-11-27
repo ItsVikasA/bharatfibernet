@@ -19,7 +19,7 @@ const Page = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem' }}>
+              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem', color: '#fd9330' }}>
                 Connect with Us
               </h1>
               
@@ -37,7 +37,7 @@ const Page = () => {
 
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2.5rem', textAlign: 'center' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2.5rem', textAlign: 'center', color: '#79ff5b' }}>
                 Select Your Option And Get In Touch Instantly
               </h2>
               
@@ -348,7 +348,7 @@ const Page = () => {
           <div className="row">
             {/* Left Column - Hotline */}
             <div className="col-lg-6">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2rem' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2rem', color: '#fd9330' }}>
                 Hotline
               </h2>
               
@@ -379,7 +379,7 @@ const Page = () => {
 
             {/* Right Column - Location */}
             <div className="col-lg-6">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2rem', textAlign: 'right' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '2rem', textAlign: 'right', color: '#79ff5b' }}>
                 Location
               </h2>
               
@@ -415,7 +415,7 @@ const Page = () => {
           {/* Email Section */}
           <div className="row" style={{ marginTop: '4rem' }}>
             <div className="col-12 text-center">
-              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#fd9330' }}>
                 Email
               </h2>
               <p style={{ fontSize: '1.05rem', color: '#333', marginBottom: '0.5rem' }}>

@@ -23,7 +23,7 @@ const page = () => {
             </div>
             <div className="col-lg-6">
               <div className="about-content">
-                <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: '#fd9330' }}>
                   Trusted by Businesses That Can't Afford to Pause
                 </h2>
                 <p className="mt-3 wow fadeInUp" data-wow-delay=".4s">
@@ -54,7 +54,7 @@ const page = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <h2 className="wow fadeInUp" data-wow-delay=".3s">
+              <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: '#79ff5b' }}>
                 We Believe in People, Not Just Technology
               </h2>
               <p className="mt-4 wow fadeInUp" data-wow-delay=".4s" style={{fontSize: '1.1rem'}}>
