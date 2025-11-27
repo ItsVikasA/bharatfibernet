@@ -475,7 +475,7 @@ const Page = () => {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-10px)';
-                e.currentTarget.style.boxShadow = '0 20px 60px rgba(40, 167, 69, 0.2)';
+                e.currentTarget.style.boxShadow = '0 20px 60px rgba(121, 255, 91, 0.2)';
                 e.currentTarget.style.borderColor = '#28a745';
               }}
               onMouseLeave={(e) => {
@@ -487,13 +487,13 @@ const Page = () => {
                   width: '70px',
                   height: '70px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #28a745 0%, #34d058 100%)',
+                  background: 'linear-gradient(135deg, #28a745 0%, #84ff5b 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   marginBottom: '1.5rem',
-                  boxShadow: '0 8px 20px rgba(40, 167, 69, 0.3)'
-                }})>
+                  boxShadow: '0 8px 20px rgba(121, 255, 91, 0.3)'
+                }}>
                   <i className="fas fa-map-marker-alt" style={{ fontSize: '1.8rem', color: '#fff' }}></i>
                 </div>
                 

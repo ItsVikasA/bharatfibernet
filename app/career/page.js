@@ -13,20 +13,16 @@ export default function Career() {
       <Breadcrumb pageName="Career" />
 
       {/* Screen 1 - Career Section */}
-      <section className="about-section section-padding" style={{ 
-        backgroundImage: 'url("/assets/img/background/pattern-12.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="about-content text-center">
-                <h2 className="mb-5" style={{ fontSize: '3.5rem', fontWeight: '600', lineHeight: '1.2', color: '#fd9330' }}>
+                <h2 className="mb-5" style={{ fontSize: '3.5rem', fontWeight: '600', lineHeight: '1.2' }}>
                   Leading India's Next-Gen Internet Solutions
                 </h2>
                 
-                <h3 className="mb-4" style={{ fontSize: '2rem', fontWeight: '600', color: '#28a745' }}>
+                <h3 className="mb-4" style={{ fontSize: '2rem', fontWeight: '600' }}>
                   Build the Future of Connectivity with Us
                 </h3>
                 
@@ -55,7 +51,7 @@ export default function Career() {
                       fontSize: '1.1rem',
                       fontWeight: '600',
                       borderRadius: '8px',
-                      background: 'linear-gradient(135deg, #fd9330 0%, #28a745 100%)',
+                      background: 'linear-gradient(135deg, #6b9ff3 0%, #5a8fe8 100%)',
                       border: 'none',
                       color: 'white',
                       textDecoration: 'none',
@@ -78,7 +74,7 @@ export default function Career() {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h2 className="mb-5" style={{ fontSize: '3rem', fontWeight: '600', color: '#fd9330' }}>
+              <h2 className="mb-5" style={{ fontSize: '3rem', fontWeight: '600' }}>
                 Join Our Team
               </h2>
               

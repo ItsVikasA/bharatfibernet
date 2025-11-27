@@ -12,19 +12,15 @@ export default function RelocationDisconnection() {
       <Breadcrumb pageName="Relocation & Disconnection" />
 
       {/* Header Section */}
-      <section className="section-padding" style={{
-        backgroundImage: 'url("/assets/img/background/pattern-11.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="section-padding">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem', color: '#fd9330' }}>
+              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem' }}>
                 Bharat Fibernet Help Guide
               </h1>
               
-              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#28a745' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#333' }}>
                 Stay connected wherever you move — or close your account with ease.
               </h2>
               

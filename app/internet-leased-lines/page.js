@@ -13,16 +13,12 @@ export default function InternetLeasedLines() {
       <Breadcrumb pageName="Internet Leased Lines" />
 
       {/* Screen 1 - Hero Section */}
-      <section className="about-section section-padding" style={{ 
-        backgroundImage: 'url("/assets/img/background/pattern-13.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="about-content text-center">
-                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#28a745' }}>
+                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2' }}>
                   Dedicated Bandwidth. Guaranteed Uptime.
                 </h2>
                 <p style={{ fontSize: '1.1rem', color: '#333', maxWidth: '1000px', margin: '0 auto' }}>

@@ -13,16 +13,12 @@ export default function DataCenterCloud() {
       <Breadcrumb pageName="Data Center & Cloud" />
 
       {/* Screen 1 - Hero Section with Form */}
-      <section className="about-section section-padding" style={{ 
-        backgroundImage: 'url("/assets/img/background/pattern-11.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7">
               <div className="about-content">
-                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#fd9330' }}>
+                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2' }}>
                   Resilient Infrastructure. Smarter Cloud.
                 </h2>
                 <p style={{ fontSize: '1.1rem', color: '#333', marginBottom: '2rem' }}>
@@ -64,7 +60,7 @@ export default function DataCenterCloud() {
                           borderRight: 'none'
                         }}
                       >
-                        <option>+91</option>
+                        <option>🇮🇳 91</option>
                       </select>
                       <input
                         type="tel"

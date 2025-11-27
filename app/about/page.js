@@ -23,7 +23,7 @@ const page = () => {
             </div>
             <div className="col-lg-6">
               <div className="about-content">
-                <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: '#fd9330' }}>
+                <h2 className="wow fadeInUp" data-wow-delay=".3s">
                   Trusted by Businesses That Can't Afford to Pause
                 </h2>
                 <p className="mt-3 wow fadeInUp" data-wow-delay=".4s">

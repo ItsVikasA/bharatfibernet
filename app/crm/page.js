@@ -13,16 +13,12 @@ export default function CRM() {
       <Breadcrumb pageName="CRM" />
 
       {/* Screen 1 - Hero Section */}
-      <section className="about-section section-padding" style={{ 
-        backgroundImage: 'url("/assets/img/background/pattern-14.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="about-content text-center">
-                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#fd9330' }}>
+                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2' }}>
                   Simplify Operations. Strengthen Relationships.
                 </h2>
                 <p style={{ fontSize: '1.1rem', color: '#333', maxWidth: '1000px', margin: '0 auto' }}>
@@ -40,7 +36,7 @@ export default function CRM() {
           {/* Main Title */}
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 style={{ fontSize: '3rem', fontWeight: '500', lineHeight: '1.3', marginBottom: '2rem', color: '#28a745' }}>
+              <h2 style={{ fontSize: '3rem', fontWeight: '500', lineHeight: '1.3', marginBottom: '2rem' }}>
                 Centralized. Connected. Customer-Driven.
               </h2>
             </div>

@@ -13,16 +13,12 @@ export default function CybersecurityServices() {
       <Breadcrumb pageName="Cybersecurity Services" />
 
       {/* Screen 1 - Hero Section */}
-      <section className="about-section section-padding" style={{ 
-        backgroundImage: 'url("/assets/img/background/pattern-11.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="about-content text-center">
-                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2', color: '#fd9330' }}>
+                <h2 className="mb-4" style={{ fontSize: '3.5rem', fontWeight: '500', lineHeight: '1.2' }}>
                   Defend. Detect. Deliver Confidence.
                 </h2>
                 <p style={{ fontSize: '1.1rem', color: '#333', maxWidth: '1000px', margin: '0 auto' }}>
@@ -40,7 +36,7 @@ export default function CybersecurityServices() {
           {/* Main Title */}
           <div className="row">
             <div className="col-12 text-center mb-5">
-                <h2 style={{ fontSize: '2.5rem', fontWeight: '400', lineHeight: '1.3', color: '#28a745' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: '400', lineHeight: '1.3' }}>
                 Intelligent protection for an always-connected world.
               </h2>
             </div>
@@ -50,7 +46,7 @@ export default function CybersecurityServices() {
           <div className="row">
             {/* Feature 1 */}
             <div className="col-12 mb-5">
-              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#fd9330' }}>
+              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                 Strengthen Defenses with Comprehensive Risk Assessments
               </h3>
               <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -61,7 +57,7 @@ export default function CybersecurityServices() {
             {/* Feature 2 */}
             <div className="col-12 mb-5">
               <div style={{ textAlign: 'center' }}>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#28a745' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Design Security Architecture Built for Resilience
                 </h3>
                 <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -72,7 +68,7 @@ export default function CybersecurityServices() {
 
             {/* Feature 3 */}
             <div className="col-12 mb-5">
-              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#fd9330' }}>
+              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                 Enhance Visibility Through Managed SOC Operations
               </h3>
               <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -83,7 +79,7 @@ export default function CybersecurityServices() {
             {/* Feature 4 */}
             <div className="col-12 mb-5">
               <div style={{ textAlign: 'center' }}>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#28a745' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Protect Devices and Networks with Endpoint Security
                 </h3>
                 <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -94,7 +90,7 @@ export default function CybersecurityServices() {
 
             {/* Feature 5 */}
             <div className="col-12 mb-5">
-              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', color: '#fd9330' }}>
+              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                 Secure Applications Through Continuous Testing and Orchestration
               </h3>
               <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
@@ -106,16 +102,12 @@ export default function CybersecurityServices() {
       </section>
 
       {/* Screen 3 - Key Capabilities */}
-      <section className="service-details-section section-padding" style={{ 
-        backgroundImage: 'url("/assets/img/background/pattern-14.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
+      <section className="service-details-section section-padding" style={{ background: '#f8f9fa' }}>
         <div className="container">
           {/* Main Title */}
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 style={{ fontSize: '3rem', fontWeight: '600', marginBottom: '1.5rem', color: '#fd9330' }}>
+              <h2 style={{ fontSize: '3rem', fontWeight: '600', marginBottom: '1.5rem' }}>
                 Bharath VoIP Key Capabilities
               </h2>
               <p style={{ fontSize: '1.1rem', color: '#666', maxWidth: '900px', margin: '0 auto' }}>
@@ -129,9 +121,9 @@ export default function CybersecurityServices() {
             {/* Capability 1 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#fd9330', background: '#fff3e6', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-shield-alt"></i></div>
+                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>🛡️</span>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#fd9330' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Comprehensive Threat Defense
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>
@@ -144,9 +136,9 @@ export default function CybersecurityServices() {
             {/* Capability 2 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#28a745', background: '#f0ffe8', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-cogs"></i></div>
+                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>⚙️</span>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#28a745' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     24×7 Monitoring and Rapid Response
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>
@@ -159,9 +151,9 @@ export default function CybersecurityServices() {
             {/* Capability 3 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#fd9330', background: '#fff3e6', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-lock"></i></div>
+                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>🔒</span>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#fd9330' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Data Encryption and Compliance Control
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>
@@ -174,9 +166,9 @@ export default function CybersecurityServices() {
             {/* Capability 4 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#28a745', background: '#f0ffe8', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-laptop"></i></div>
+                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>💻</span>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#28a745' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Endpoint Detection and Device Security
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>
@@ -189,9 +181,9 @@ export default function CybersecurityServices() {
             {/* Capability 5 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#fd9330', background: '#fff3e6', padding: '12px', borderRadius: '8px', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="fas fa-cloud"></i></div>
+                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>☁️</span>
                 <div>
-                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem', color: '#fd9330' }}>
+                  <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Secure Cloud and Hybrid Environments
                   </h4>
                   <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', marginBottom: 0 }}>
