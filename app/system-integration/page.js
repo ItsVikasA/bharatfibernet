@@ -72,7 +72,7 @@ const page = () => {
                           borderRadius: '5px 0 0 5px'
                         }}
                       >
-                        <option value="+91">🇮🇳 91</option>
+                        <option value="+91">+91</option>
                       </select>
                       <input 
                         type="tel" 
@@ -338,7 +338,9 @@ const page = () => {
             {/* Advanced Network Security */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>🔒</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#fd9330'}}>
+                  <i className="fas fa-lock"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Advanced Network Security
@@ -353,7 +355,9 @@ const page = () => {
             {/* Centralized Network Management */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>🌐</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745'}}>
+                  <i className="fas fa-globe"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Centralized Network Management
@@ -368,7 +372,9 @@ const page = () => {
             {/* Scalable Architecture */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>⚙️</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#fd9330'}}>
+                  <i className="fas fa-cogs"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Scalable Architecture
@@ -383,7 +389,9 @@ const page = () => {
             {/* Intelligent Resource Utilization */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>💡</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745'}}>
+                  <i className="fas fa-lightbulb"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Intelligent Resource Utilization
@@ -398,7 +406,9 @@ const page = () => {
             {/* Zero-Disruption Deployment */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>🔄</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#fd9330'}}>
+                  <i className="fas fa-sync-alt"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Zero-Disruption Deployment
@@ -413,7 +423,9 @@ const page = () => {
             {/* 24×7 Monitoring & Real-Time Alerts */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>⏰</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745'}}>
+                  <i className="fas fa-clock"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     24×7 Monitoring & Real-Time Alerts
@@ -428,7 +440,9 @@ const page = () => {
             {/* Predictive Maintenance */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>🔍</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#fd9330'}}>
+                  <i className="fas fa-search"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Predictive Maintenance
@@ -443,7 +457,9 @@ const page = () => {
             {/* Compliance-Driven Infrastructure */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>🛡️</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745'}}>
+                  <i className="fas fa-shield-alt"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Compliance-Driven Infrastructure
@@ -458,7 +474,9 @@ const page = () => {
             {/* Performance Analytics Dashboard */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>📊</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#fd9330'}}>
+                  <i className="fas fa-chart-bar"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Performance Analytics Dashboard
@@ -473,7 +491,9 @@ const page = () => {
             {/* Dedicated Technical Assistance */}
             <div className="col-lg-6">
               <div className="capability-item d-flex align-items-start mb-4">
-                <div className="icon me-3" style={{fontSize: '2rem'}}>👨‍💻</div>
+                <div className="icon me-3" style={{fontSize: '2rem', color: '#28a745'}}>
+                  <i className="fas fa-user-cog"></i>
+                </div>
                 <div>
                   <h4 className="mb-3" style={{fontWeight: '700', fontSize: '1.2rem'}}>
                     Dedicated Technical Assistance

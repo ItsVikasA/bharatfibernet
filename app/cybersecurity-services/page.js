@@ -121,7 +121,9 @@ export default function CybersecurityServices() {
             {/* Capability 1 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>🛡️</span>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#fd9330' }}>
+                  <i className="fas fa-shield-alt"></i>
+                </div>
                 <div>
                   <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Comprehensive Threat Defense
@@ -136,7 +138,9 @@ export default function CybersecurityServices() {
             {/* Capability 2 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>⚙️</span>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#28a745' }}>
+                  <i className="fas fa-clock"></i>
+                </div>
                 <div>
                   <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     24×7 Monitoring and Rapid Response
@@ -151,7 +155,9 @@ export default function CybersecurityServices() {
             {/* Capability 3 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>🔒</span>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#fd9330' }}>
+                  <i className="fas fa-lock"></i>
+                </div>
                 <div>
                   <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Data Encryption and Compliance Control
@@ -166,7 +172,9 @@ export default function CybersecurityServices() {
             {/* Capability 4 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>💻</span>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#28a745' }}>
+                  <i className="fas fa-laptop"></i>
+                </div>
                 <div>
                   <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Endpoint Detection and Device Security
@@ -181,7 +189,9 @@ export default function CybersecurityServices() {
             {/* Capability 5 */}
             <div className="col-12 mb-4">
               <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem' }}>☁️</span>
+                <div style={{ fontSize: '1.5rem', marginRight: '1rem', marginTop: '0.2rem', color: '#fd9330' }}>
+                  <i className="fas fa-cloud"></i>
+                </div>
                 <div>
                   <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                     Secure Cloud and Hybrid Environments

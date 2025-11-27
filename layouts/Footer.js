@@ -1,4 +1,5 @@
 // components/layout/Footer.jsx
+import Link from "next/link";
 
 const Footer = ({ footer }) => {
   switch (footer) {
@@ -41,12 +42,12 @@ const Footer1 = () => {
       padding: 0,
     }}
   >
-    <li>Who We Are</li>
-    <li>What We Do</li>
-    <li>Knowledge</li>
+    <li><Link href="/about" style={{ color: 'inherit', textDecoration: 'none' }}>Who We Are</Link></li>
+    <li><Link href="/service" style={{ color: 'inherit', textDecoration: 'none' }}>What We Do</Link></li>
+    <li><Link href="/knowledge" style={{ color: 'inherit', textDecoration: 'none' }}>Knowledge</Link></li>
     <li>Career</li>
-    <li>Help &amp; Support</li>
-    <li>Contact</li>
+    <li><Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Help &amp; Support</Link></li>
+    <li><Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link></li>
   </ul>
 </div>
 
@@ -83,9 +84,21 @@ const Footer1 = () => {
                   className="list-items list-unstyled mb-0"
                   style={{ textAlign: "center" }}
                 >
-                  <li className="mb-2">Privacy Policy</li>
-                  <li className="mb-2">Terms Of Services</li>
-                  <li className="mb-0">Refund Policy</li>
+                  <li className="mb-2">
+                    <Link href="/privacy-policy" style={{ color: 'inherit', textDecoration: 'none' }}>
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/terms-of-service" style={{ color: 'inherit', textDecoration: 'none' }}>
+                      Terms Of Services
+                    </Link>
+                  </li>
+                  <li className="mb-0">
+                    <Link href="/refund-policy" style={{ color: 'inherit', textDecoration: 'none' }}>
+                      Refund Policy
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -106,8 +119,7 @@ const Footer1 = () => {
         {/* -------- BOTTOM SINGLE LINE -------- */}
         <div className="py-3 text-center">
           <p className="mb-0">
-            Who We Are | What We Do | Knowledge | Career | Help &amp; support |
-            Contact
+            <Link href="/about" style={{ color: 'inherit', textDecoration: 'none' }}>Who We Are</Link> | <Link href="/service" style={{ color: 'inherit', textDecoration: 'none' }}>What We Do</Link> | <Link href="/knowledge" style={{ color: 'inherit', textDecoration: 'none' }}>Knowledge</Link> | Career | <Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Help &amp; support</Link> | <Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link>
           </p>
         </div>
       </div>
