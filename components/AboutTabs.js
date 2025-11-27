@@ -110,55 +110,6 @@ const AboutTabs = () => {
   return (
     <section className="about-section fix section-padding">
       <div className="container">
-        {/* Tab Navigation */}
-        <div className="row mb-5">
-          <div className="col-lg-12">
-            <div className="tab-navigation" style={{
-              display: 'flex',
-              justifyContent: 'center',
-              gap: '0',
-              marginBottom: '3rem'
-            }}>
-              {tabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`tab-button ${activeTab === tab.id ? 'active' : ''}`}
-                  style={{
-                    padding: '15px 30px',
-                    border: '1px solid #333',
-                    background: 'transparent',
-                    color: '#333',
-                    fontSize: '1rem',
-                    fontWeight: '400',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    flex: '1',
-                    maxWidth: '270px',
-                    borderRight: 'none'
-                  }}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-            <style jsx>{`
-              .tab-navigation button:first-child {
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
-              }
-              .tab-navigation button:last-child {
-                border-right: 1px solid #333 !important;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
-              }
-              .tab-button:hover {
-                background: #f8f9fa !important;
-              }
-            `}</style>
-          </div>
-        </div>
-
         {/* Tab Content */}
         <div className="row mb-5">
           <div className="col-lg-12 text-left mb-4">
