@@ -900,7 +900,7 @@ const page = () => {
                   <img src="assets/img/hero/04.png" alt="OTT 1 Month" />
                 </div>
                 <h4>OTT PLATFORMS (18)</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>1 Month Plan</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>1 Month Plan</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹170 / month</p>
                 <p className="plan-price">₹ 170 / Month</p>
               </div>
@@ -944,7 +944,7 @@ const page = () => {
                   <img src="assets/img/hero/05.png" alt="OTT 6 Months" />
                 </div>
                 <h4>OTT PLATFORMS (18)</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>6 Months Plan</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>6 Months Plan</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹1,020 (6 months)</p>
                 <p className="plan-price">₹ 1,020 / 6 Months</p>
               </div>
@@ -988,7 +988,7 @@ const page = () => {
                   <img src="assets/img/hero/06.png" alt="OTT 12 Months" />
                 </div>
                 <h4>OTT PLATFORMS (18)</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>12 Months Plan</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>12 Months Plan</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹2,040 (12 months)</p>
                 <p className="plan-price">₹ 2,040 / 12 Months</p>
               </div>
@@ -1039,7 +1039,7 @@ const page = () => {
                   <img src="assets/img/hero/04.png" alt="Telugu Gold HD" />
                 </div>
                 <h4 style={{color: 'white'}}>TELUGU GOLD HD PACK</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>430 Channels</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>430 Channels</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
                 <p className="plan-price">₹ 300 / Month</p>
               </div>
@@ -1083,7 +1083,7 @@ const page = () => {
                   <img src="assets/img/hero/05.png" alt="Hindi Gold HD" />
                 </div>
                 <h4 style={{color: 'white'}}>HINDI GOLD HD PACK</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>440 Channels</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>440 Channels</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
                 <p className="plan-price">₹ 300 / Month</p>
               </div>
@@ -1127,7 +1127,7 @@ const page = () => {
                   <img src="assets/img/hero/06.png" alt="Hindi Telugu Silver" />
                 </div>
                 <h4 style={{color: 'white'}}>HINDI TELUGU SILVER PACK</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>430 Channels</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>430 Channels</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
                 <p className="plan-price">₹ 300 / Month</p>
               </div>
@@ -1171,7 +1171,7 @@ const page = () => {
                   <img src="assets/img/hero/07.png" alt="Hindi Telugu Gold" />
                 </div>
                 <h4 style={{color: 'white'}}>HINDI TELUGU GOLD PACK</h4>
-                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>450 Channels</h5>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>450 Channels</h5>
                 <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
                 <p className="plan-price">₹ 300 / Month</p>
               </div>
