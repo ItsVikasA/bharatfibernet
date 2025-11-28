@@ -6,7 +6,12 @@ const page = () => {
     <NextLayout>
       <Breadcrumb pageName="Help & Support" />
       
-      <section className="service-details-section section-padding">
+      <section className="service-details-section section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12">

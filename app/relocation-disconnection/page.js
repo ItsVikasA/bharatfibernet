@@ -12,7 +12,12 @@ export default function RelocationDisconnection() {
       <Breadcrumb pageName="Relocation & Disconnection" />
 
       {/* Header Section */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/3.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
@@ -39,7 +44,12 @@ export default function RelocationDisconnection() {
       </section>
 
       {/* Content Section */}
-      <section className="section-padding" style={{ background: '#f8f9fa' }}>
+      <section className="section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/4.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">

@@ -746,10 +746,11 @@ const Page = () => {
         <div className="map-items">
           <div className="googpemap">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15315.42910867886!2d75.28290415000001!3d16.330235199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb91007a7a5d91%3A0xa35b4c55e725322d!2s4th%20Floor%2C%20Jyothi%20Flora%2C%20Kavuri%20Hills%20Phase%202%20Rd%2C%20Phase%202%2C%20Kavuri%20Hills%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500033!3m2!1d17.4384031!2d78.3938218!5e0!3m2!1sen!2sin!4v1764323158244!5m2!1sen!2sin"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>

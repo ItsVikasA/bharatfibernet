@@ -1752,7 +1752,10 @@ input.main-search-input::placeholder {
 }
 
 .header-1 {
-  background: #101828;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(/assets/img/4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-1 .container-fluid {
   padding: 0 130px;

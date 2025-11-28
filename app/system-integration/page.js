@@ -9,7 +9,12 @@ const page = () => {
       <Breadcrumb pageName="System Integration" pageTitle="Smart Integration. Seamless Infrastructure." />
       
       {/* Screen 1: Hero Section with Form */}
-      <section className="service-details-section section-padding">
+      <section className="service-details-section section-padding" style={{ 
+        backgroundImage: 'url(/assets/img/4.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row g-5 align-items-start">
             {/* Left Content */}
@@ -124,7 +129,12 @@ const page = () => {
       </section>
 
       {/* Screen 2: Secure & Scalable Digital Network Design */}
-      <section className="service-content-section section-padding bg-light">
+      <section className="service-content-section section-padding bg-light" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           {/* Main Title */}
           <div className="row mb-5">
@@ -228,7 +238,12 @@ const page = () => {
       </section>
 
       {/* Screen 3: Managed IT Services */}
-      <section className="managed-it-section section-padding">
+      <section className="managed-it-section section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           {/* Main Title */}
           <div className="row mb-5">
@@ -508,7 +523,12 @@ const page = () => {
       </section>
 
       {/* Screen 5: Frequently Asked Questions */}
-      <section className="faq-section section-padding">
+      <section className="faq-section section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/4.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           {/* Main Title */}
           <div className="row mb-5">

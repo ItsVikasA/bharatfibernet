@@ -108,14 +108,6 @@ const Footer1 = () => {
         {/* -------- HORIZONTAL DIVIDER -------- */}
         <hr className="my-0" />
 
-        {/* -------- SINGLE CENTERED T&C LINE -------- */}
-        <div className="py-3 text-center">
-          <p className="mb-0">
-            Terms &amp; Conditions reserved | Cookies | Privacy &amp; Security |
-            © 2022 Bharat FiberNet | All rights reserved.
-          </p>
-        </div>
-
         {/* -------- BOTTOM SINGLE LINE -------- */}
         <div className="py-3 text-center">
           <p className="mb-0">

@@ -13,7 +13,12 @@ const page = () => {
       <AboutTabs />
 
       {/* Screen 2: Trusted by Businesses */}
-      <section className="about-section fix section-padding pt-0 bg-light">
+      <section className="about-section fix section-padding pt-0" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
@@ -50,7 +55,12 @@ const page = () => {
       </section>
 
       {/* Screen 3: We Believe in People */}
-      <section className="about-section fix section-padding">
+      <section className="about-section fix section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/2.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -77,7 +87,12 @@ const page = () => {
       </section>
 
       {/* Screen 4: Our Promise */}
-      <section className="service-section fix section-padding pt-0 bg-light">
+      <section className="service-section fix section-padding pt-0" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/3.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="section-title text-center mb-5">
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -153,7 +168,12 @@ const page = () => {
       </section>
 
       {/* Screen 5: Leadership Section */}
-      <section className="team-section fix section-padding">
+      <section className="team-section fix section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/4.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="section-title text-center mb-5">
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -230,7 +250,12 @@ const page = () => {
       </section>
 
       {/* Our Team Section */}
-      <section className="team-section fix section-padding pt-0 bg-light">
+      <section className="team-section fix section-padding pt-0" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="section-title text-center mb-5">
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -259,7 +284,12 @@ const page = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section section-padding">
+      <section className="cta-section section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/2.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 mb-4 mb-lg-0">

@@ -11,7 +11,10 @@ export default function Knowledge() {
 
       {/* Hero Section */}
       <section className="section-padding" style={{
-        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
       }}>
         <div className="container">
           <div className="row">
@@ -59,7 +62,12 @@ export default function Knowledge() {
       </section>
 
       {/* Filter and Search Section */}
-      <section className="section-padding" style={{ background: '#fff' }}>
+      <section className="section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/4.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           {/* Filter Tabs */}
           <div className="row justify-content-center mb-4">
@@ -298,7 +306,9 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+                    backgroundImage: 'url(/assets/img/1tv.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -318,7 +328,6 @@ export default function Knowledge() {
                     }}>
                       Blog 1
                     </span>
-                    <i className="fas fa-image" style={{ fontSize: '3rem', color: '#90caf9' }}></i>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
@@ -385,7 +394,9 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+                    backgroundImage: 'url(/assets/img/15.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -405,7 +416,6 @@ export default function Knowledge() {
                     }}>
                       Blog 2
                     </span>
-                    <i className="fas fa-image" style={{ fontSize: '3rem', color: '#90caf9' }}></i>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
@@ -472,12 +482,13 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+                    backgroundImage: 'url(/assets/img/16.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    <i className="fas fa-image" style={{ fontSize: '3rem', color: '#90caf9' }}></i>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
@@ -544,12 +555,13 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+                    backgroundImage: 'url(/assets/img/18.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    <i className="fas fa-image" style={{ fontSize: '3rem', color: '#90caf9' }}></i>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
@@ -616,12 +628,13 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+                    backgroundImage: 'url(/assets/img/11.jpeg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    <i className="fas fa-image" style={{ fontSize: '3rem', color: '#90caf9' }}></i>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
@@ -688,12 +701,13 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+                    backgroundImage: 'url(/assets/img/111.jpeg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    <i className="fas fa-image" style={{ fontSize: '3rem', color: '#90caf9' }}></i>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
@@ -831,7 +845,12 @@ export default function Knowledge() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding" style={{ background: '#f8f9fa' }}>
+      <section className="section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/assets/img/3.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">

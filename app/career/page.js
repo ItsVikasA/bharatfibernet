@@ -13,7 +13,12 @@ export default function Career() {
       <Breadcrumb pageName="Career" />
 
       {/* Screen 1 - Career Section */}
-      <section className="about-section section-padding" style={{ background: '#f8f9fa' }}>
+      <section className="about-section section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -70,7 +75,12 @@ export default function Career() {
       </section>
 
       {/* Screen 2 - Join Our Team */}
-      <section className="service-details-section section-padding">
+      <section className="service-details-section section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/2.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
@@ -95,7 +105,12 @@ export default function Career() {
       </section>
 
       {/* Screen 3 - Your Career at Bharat Fibernet */}
-      <section className="section-padding" style={{ background: '#f8f9fa' }}>
+      <section className="section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/3.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
@@ -189,7 +204,12 @@ export default function Career() {
       </section>
 
       {/* Screen 4 - Job Listings and Resume Form */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/4.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container">
           {/* Job Categories and Search */}
           <div className="row mb-4">
