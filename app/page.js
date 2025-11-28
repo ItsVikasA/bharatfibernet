@@ -335,17 +335,32 @@ const page = () => {
 <section 
   className="testimonial-section fix section-padding"
   style={{
+    position: 'relative',
+    overflow: 'hidden'
+  }}
+>
+  <div style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
     backgroundImage: 'url("/assets/img/3.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}
->
-  <div className="container">
+    backgroundRepeat: 'no-repeat',
+    opacity: 0.4,
+    zIndex: 0
+  }} />
+  
+  <div className="container" style={{ position: 'relative', zIndex: 1 }}>
 
     {/* Heading */}
     <div className="section-title text-center mb-5">
-      <h2 className="wow fadeInUp" data-wow-delay=".2s">
+      <h2 className="wow fadeInUp" data-wow-delay=".2s" style={{ 
+        color: '#1a1a1a',
+        fontWeight: '700'
+      }}>
         What Industry Leaders Are Saying
       </h2>
     </div>
@@ -355,64 +370,128 @@ const page = () => {
 
       {/* 1 */}
       <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="testimonial-card">
-          <p className="testimonial-text">
+        <div className="testimonial-card" style={{
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '15px',
+          padding: '30px',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.15)',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}>
+          <p className="testimonial-text" style={{ color: '#555', fontSize: '15px', lineHeight: '1.7', marginBottom: '25px' }}>
             "We switched to this broadband provider because of their competitive
-            pricing, and we haven’t looked back since. The service is excellent,
-            and we’re saving money every month."
+            pricing, and we haven't looked back since. The service is excellent,
+            and we're saving money every month."
           </p>
 
-          <div className="testimonial-footer">
-            <h4>Suraj S</h4>
-            <p className="role">CFO</p>
+          <div className="testimonial-footer" style={{
+            background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+            borderRadius: '10px',
+            padding: '20px',
+            textAlign: 'center'
+          }}>
+            <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>Suraj S</h4>
+            <p className="role" style={{ color: 'white', fontSize: '14px', margin: 0, opacity: 0.95 }}>CFO</p>
           </div>
         </div>
       </div>
 
       {/* 2 */}
       <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="testimonial-card">
-          <p className="testimonial-text">
+        <div className="testimonial-card" style={{
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '15px',
+          padding: '30px',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.15)',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}>
+          <p className="testimonial-text" style={{ color: '#555', fontSize: '15px', lineHeight: '1.7', marginBottom: '25px' }}>
             "The installation process was seamless and quick. The technicians
             were professional and ensured everything was set up perfectly. We've
             had a smooth experience ever since."
           </p>
 
-          <div className="testimonial-footer">
-            <h4>David R</h4>
-            <p className="role">Operations Manager</p>
+          <div className="testimonial-footer" style={{
+            background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+            borderRadius: '10px',
+            padding: '20px',
+            textAlign: 'center'
+          }}>
+            <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>David R</h4>
+            <p className="role" style={{ color: 'white', fontSize: '14px', margin: 0, opacity: 0.95 }}>Operations Manager</p>
           </div>
         </div>
       </div>
 
       {/* 3 */}
       <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="testimonial-card">
-          <p className="testimonial-text">
+        <div className="testimonial-card" style={{
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '15px',
+          padding: '30px',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.15)',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}>
+          <p className="testimonial-text" style={{ color: '#555', fontSize: '15px', lineHeight: '1.7', marginBottom: '25px' }}>
             "We love that the plans are scalable and flexible to meet our
             growing business needs. Upgrading packages is simple, and our team
             is always connected."
           </p>
 
-          <div className="testimonial-footer">
-            <h4>Soujanya D</h4>
-            <p className="role">HR Manager</p>
+          <div className="testimonial-footer" style={{
+            background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+            borderRadius: '10px',
+            padding: '20px',
+            textAlign: 'center'
+          }}>
+            <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>Soujanya D</h4>
+            <p className="role" style={{ color: 'white', fontSize: '14px', margin: 0, opacity: 0.95 }}>HR Manager</p>
           </div>
         </div>
       </div>
 
       {/* 4 */}
       <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="testimonial-card">
-          <p className="testimonial-text">
+        <div className="testimonial-card" style={{
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '15px',
+          padding: '30px',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.15)',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}>
+          <p className="testimonial-text" style={{ color: '#555', fontSize: '15px', lineHeight: '1.7', marginBottom: '25px' }}>
             "Their enterprise solutions helped us improve uptime and performance.
             The network is incredibly reliable, and support is always available
             when needed."
           </p>
 
-          <div className="testimonial-footer">
-            <h4>Mahesh K</h4>
-            <p className="role">IT Director</p>
+          <div className="testimonial-footer" style={{
+            background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+            borderRadius: '10px',
+            padding: '20px',
+            textAlign: 'center'
+          }}>
+            <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>Mahesh K</h4>
+            <p className="role" style={{ color: 'white', fontSize: '14px', margin: 0, opacity: 0.95 }}>IT Director</p>
           </div>
         </div>
       </div>
