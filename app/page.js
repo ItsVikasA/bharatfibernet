@@ -335,7 +335,7 @@ const page = () => {
 <section 
   className="testimonial-section fix section-padding"
   style={{
-    backgroundImage: 'url("/assets/img/1.jpg")',
+    backgroundImage: 'url("/assets/img/3.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
