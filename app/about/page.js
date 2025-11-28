@@ -292,9 +292,25 @@ const page = () => {
                       required 
                     />
                   </div>
-                  <button type="submit" className="theme-btn w-100">
+                  <button 
+                    type="submit" 
+                    className="theme-btn w-100"
+                    style={{
+                      background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+                      border: 'none',
+                      padding: '1rem 2rem',
+                      fontSize: '1.1rem',
+                      fontWeight: '600',
+                      borderRadius: '8px',
+                      textTransform: 'uppercase',
+                      color: 'white',
+                      letterSpacing: '1px',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 4px 15px rgba(255, 140, 0, 0.3)'
+                    }}
+                  >
                     Submit!
-                    <i className="far fa-arrow-right" />
+                    <i className="far fa-arrow-right" style={{ marginLeft: '8px' }} />
                   </button>
                 </form>
               </div>

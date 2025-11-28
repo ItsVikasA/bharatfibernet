@@ -100,19 +100,18 @@ const page = () => {
                       }}
                     />
                   </div>
-                  <button 
-                    type="submit" 
-                    className="btn w-100" 
-                    style={{
-                      background: 'linear-gradient(135deg, #ff6b9d 0%, #ff5e8a 100%)',
-                      color: '#fff',
-                      padding: '15px',
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
+                  <button
+                    type="submit"
+                    className="theme-btn w-100"
+                    style={{ 
+                      background: 'linear-gradient(135deg, #fd9330 0%, #ff7420 100%)', 
                       border: 'none',
-                      borderRadius: '5px',
+                      padding: '0.9rem',
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      borderRadius: '6px',
                       textTransform: 'uppercase',
-                      letterSpacing: '1px'
+                      color: 'white'
                     }}
                   >
                     SUBMIT
@@ -158,12 +157,12 @@ const page = () => {
 
           {/* Unified Control and Centralized Management */}
           <div className="row mb-5">
-            <div className="col-lg-12 text-center">
-              <div className="content-block mb-5">
+            <div className="col-lg-12">
+              <div className="content-block mb-5" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Unified Control and Centralized Management
                 </h3>
-                <p style={{fontSize: '1.05rem', lineHeight: '1.8', maxWidth: '1000px', margin: '0 auto'}}>
+                <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
                   Manage all network operations efficiently through a single, centralized interface that provides real-time visibility into performance, device status, and fault detection. This unified control system simplifies daily administration, streamlines maintenance, and enables faster response to issues, ensuring smooth and reliable network operations.
                 </p>
               </div>
@@ -186,12 +185,12 @@ const page = () => {
 
           {/* ROI-Optimized Deployment */}
           <div className="row mb-5">
-            <div className="col-lg-12 text-center">
-              <div className="content-block mb-5">
+            <div className="col-lg-12">
+              <div className="content-block mb-5" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   ROI-Optimized Deployment
                 </h3>
-                <p style={{fontSize: '1.05rem', lineHeight: '1.8', maxWidth: '1000px', margin: '0 auto'}}>
+                <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
                   Achieve maximum network performance through efficient resource utilization, smart bandwidth allocation, and energy-conscious deployment. The approach ensures measurable returns on infrastructure investments by reducing waste, lowering operational costs, and optimizing long-term network efficiency and reliability.
                 </p>
               </div>
@@ -214,12 +213,12 @@ const page = () => {
 
           {/* 24×7 Monitoring and Proactive Support */}
           <div className="row">
-            <div className="col-lg-12 text-center">
-              <div className="content-block">
+            <div className="col-lg-12">
+              <div className="content-block" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   24×7 Monitoring and Proactive Support
                 </h3>
-                <p style={{fontSize: '1.05rem', lineHeight: '1.8', maxWidth: '1000px', margin: '0 auto'}}>
+                <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
                   Ensure continuous uptime with around-the-clock network monitoring and automated fault detection that identifies and resolves issues before they escalate. Real-time insights and proactive response keep systems stable, minimize downtime, and sustain optimal performance throughout all hours of operation.
                 </p>
               </div>
@@ -262,12 +261,12 @@ const page = () => {
 
           {/* Predictive Maintenance for Maximum Uptime */}
           <div className="row mb-5">
-            <div className="col-lg-12 text-center">
-              <div className="content-block mb-5">
+            <div className="col-lg-12">
+              <div className="content-block mb-5" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Predictive Maintenance for Maximum Uptime
                 </h3>
-                <p style={{fontSize: '1.05rem', lineHeight: '1.8', maxWidth: '1000px', margin: '0 auto'}}>
+                <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
                   Intelligent analytics identify early warning signs of hardware or software issues, enabling preventive maintenance rather than reactive repairs. This ensures critical systems remain available, reduces emergency interventions, and helps maintain continuous uptime for essential business operations.
                 </p>
               </div>
@@ -290,12 +289,12 @@ const page = () => {
 
           {/* Scalability Without Downtime */}
           <div className="row mb-5">
-            <div className="col-lg-12 text-center">
-              <div className="content-block mb-5">
+            <div className="col-lg-12">
+              <div className="content-block mb-5" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Scalability Without Downtime
                 </h3>
-                <p style={{fontSize: '1.05rem', lineHeight: '1.8', maxWidth: '1000px', margin: '0 auto'}}>
+                <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
                   Infrastructure scales seamlessly with organizational growth, allowing additional capacity, users, or workloads without interrupting ongoing operations. The flexible architecture adapts easily to evolving business demands, supporting expansion without performance degradation or service disruption.
                 </p>
               </div>

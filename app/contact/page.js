@@ -322,14 +322,18 @@ const Page = () => {
                     <button 
                       type="submit"
                       style={{
-                        padding: '0.75rem 3rem',
-                        background: 'white',
-                        color: '#000',
-                        border: '2px solid #000',
-                        borderRadius: '5px',
+                        padding: '1rem 3rem',
+                        background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '8px',
                         fontSize: '1.1rem',
                         fontWeight: '600',
-                        cursor: 'pointer'
+                        cursor: 'pointer',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 15px rgba(255, 140, 0, 0.3)'
                       }}
                     >
                       Submit!

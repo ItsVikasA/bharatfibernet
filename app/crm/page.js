@@ -56,7 +56,7 @@ export default function CRM() {
 
             {/* Feature 2 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Enhance Engagement with Multi-Channel Communication
                 </h3>
@@ -78,7 +78,7 @@ export default function CRM() {
 
             {/* Feature 4 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Resolve Issues with an Integrated Support Helpdesk
                 </h3>

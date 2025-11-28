@@ -82,7 +82,7 @@ export default function NetworkServices() {
                     type="submit"
                     className="theme-btn w-100"
                     style={{ 
-                      background: 'linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%)', 
+                      background: 'linear-gradient(135deg, #fd9330 0%, #ff7420 100%)', 
                       border: 'none',
                       padding: '0.9rem',
                       fontSize: '1rem',
@@ -135,11 +135,11 @@ export default function NetworkServices() {
 
             {/* Feature 2 */}
             <div className="col-12 mb-5">
-              <div className="feature-box" style={{ background: 'white', padding: '2.5rem', borderRadius: '12px', border: '1px solid #e0e0e0' }}>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Flexible Bandwidth Options That Scale with Demand
                 </h3>
-                <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', textAlign: 'center' }}>
+                <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
                   Bandwidth adjusts dynamically to handle varying workloads and data requirements. As demand increases, the network scales in real time to preserve consistent performance, enabling efficient operations across departments and remote locations.
                 </p>
               </div>
@@ -157,12 +157,14 @@ export default function NetworkServices() {
 
             {/* Feature 4 */}
             <div className="col-12 mb-5">
-              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', textAlign: 'center' }}>
-                Secure Remote Access for Hybrid and Distributed Teams
-              </h3>
-              <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', textAlign: 'center' }}>
-                Authorized users connect securely from any location without compromising speed or privacy. Encrypted tunnels and identity-based authentication maintain confidentiality while allowing distributed teams to collaborate effectively across regions.
-              </p>
+              <div style={{ textAlign: 'right' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
+                  Secure Remote Access for Hybrid and Distributed Teams
+                </h3>
+                <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
+                  Authorized users connect securely from any location without compromising speed or privacy. Encrypted tunnels and identity-based authentication maintain confidentiality while allowing distributed teams to collaborate effectively across regions.
+                </p>
+              </div>
             </div>
 
             {/* Feature 5 */}
@@ -177,12 +179,14 @@ export default function NetworkServices() {
 
             {/* Feature 6 */}
             <div className="col-12 mb-5">
-              <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem', textAlign: 'center' }}>
-                Future-Ready Scalability for Growing Environments
-              </h3>
-              <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8', textAlign: 'center' }}>
-                Infrastructure evolves seamlessly as operations expand. Modular architecture allows easy addition of new users, devices, and branches, supporting ongoing growth without downtime or performance degradation.
-              </p>
+              <div style={{ textAlign: 'right' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
+                  Future-Ready Scalability for Growing Environments
+                </h3>
+                <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.8' }}>
+                  Infrastructure evolves seamlessly as operations expand. Modular architecture allows easy addition of new users, devices, and branches, supporting ongoing growth without downtime or performance degradation.
+                </p>
+              </div>
             </div>
 
             {/* Feature 7 */}
@@ -274,7 +278,7 @@ export default function NetworkServices() {
 
             {/* Feature 6 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Continuous Monitoring and Technical Oversight
                 </h3>

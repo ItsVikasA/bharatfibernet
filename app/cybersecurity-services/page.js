@@ -56,7 +56,7 @@ export default function CybersecurityServices() {
 
             {/* Feature 2 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Design Security Architecture Built for Resilience
                 </h3>
@@ -78,7 +78,7 @@ export default function CybersecurityServices() {
 
             {/* Feature 4 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Protect Devices and Networks with Endpoint Security
                 </h3>

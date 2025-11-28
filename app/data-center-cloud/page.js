@@ -82,7 +82,7 @@ export default function DataCenterCloud() {
                     type="submit"
                     className="theme-btn w-100"
                     style={{ 
-                      background: 'linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%)', 
+                      background: 'linear-gradient(135deg, #fd9330 0%, #ff7420 100%)', 
                       border: 'none',
                       padding: '0.9rem',
                       fontSize: '1rem',
@@ -152,7 +152,7 @@ export default function DataCenterCloud() {
 
             {/* Feature 4 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Empower Growth with Scalable Colocation Options
                 </h3>
@@ -197,7 +197,7 @@ export default function DataCenterCloud() {
 
             {/* Feature 2 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Unify Operations Through a Single Control Dashboard
                 </h3>
@@ -264,7 +264,7 @@ export default function DataCenterCloud() {
 
             {/* Feature 2 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Design Architecture Aligned to Business Goals
                 </h3>
@@ -286,7 +286,7 @@ export default function DataCenterCloud() {
 
             {/* Feature 4 */}
             <div className="col-12 mb-5">
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: 'right' }}>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '1rem' }}>
                   Monitor Performance with Proactive Support
                 </h3>
