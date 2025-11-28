@@ -132,7 +132,7 @@ const AboutTabs = () => {
           </div>
           <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
             <div className="about-image-3">
-              <img src="/assets/img/i1.jpeg" alt="Bharat Fibernet Connectivity" style={{width: '100%', height: 'auto', minHeight: '400px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 10px 40px rgba(0,0,0,0.15)'}} />
+              <img src="assets/img/about/05.jpg" alt="Bharat Fibernet Connectivity" style={{borderRadius: '10px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)'}} />
             </div>
           </div>
         </div>

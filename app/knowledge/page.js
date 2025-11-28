@@ -1,46 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import Breadcrumb from "@/components/Breadcrumb";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 
 export default function Knowledge() {
-  const [activeFilter, setActiveFilter] = useState('all');
-  
-  const blogData = [
-    { id: 1, category: 'article', image: '1tv.jpg', title: 'Understanding Network Infrastructure', excerpt: 'A comprehensive guide to building and maintaining robust network infrastructure for modern businesses.', date: 'Nov 20, 2025' },
-    { id: 2, category: 'case-study', image: '15.jpg', title: 'Enterprise Connectivity Success', excerpt: 'How we helped a Fortune 500 company achieve 99.9% uptime with our managed network solutions.', date: 'Nov 18, 2025' },
-    { id: 3, category: 'article', image: '16.jpg', title: 'Cybersecurity Best Practices', excerpt: 'Essential security measures every business should implement to protect their network infrastructure.', date: 'Nov 15, 2025' },
-    { id: 4, category: 'white-paper', image: '18.jpg', title: '5G and Future Connectivity', excerpt: 'Exploring the impact of 5G technology on enterprise networks and IoT infrastructure.', date: 'Nov 12, 2025' },
-    { id: 5, category: 'article', image: '11.jpeg', title: 'Cloud Integration Strategies', excerpt: 'Seamlessly integrate cloud services with your existing network infrastructure for maximum efficiency.', date: 'Nov 10, 2025' },
-    { id: 6, category: 'multimedia', image: '111.jpeg', title: 'Network Setup Video Tutorial', excerpt: 'Watch our step-by-step video guide on setting up enterprise-grade network infrastructure.', date: 'Nov 8, 2025' }
-  ];
-
-  const filteredBlogs = activeFilter === 'all' 
-    ? blogData 
-    : blogData.filter(blog => blog.category === activeFilter);
-
-  const getCategoryColor = (category) => {
-    const colors = {
-      'article': '#28a745',
-      'case-study': '#fd9330',
-      'white-paper': '#fd9330',
-      'multimedia': '#fd9330'
-    };
-    return colors[category] || '#28a745';
-  };
-
-  const getCategoryLabel = (category) => {
-    const labels = {
-      'article': 'ARTICLE',
-      'case-study': 'CASE STUDY',
-      'white-paper': 'WHITE PAPER',
-      'multimedia': 'MULTIMEDIA'
-    };
-    return labels[category] || category.toUpperCase();
-  };
-
   return (
     <NextLayout header={1} footer={1}>
       <Breadcrumb pageName="Knowledge Center" />
@@ -115,84 +79,102 @@ export default function Knowledge() {
                 flexWrap: 'wrap',
                 marginBottom: '2rem'
               }}>
-                <button 
-                  onClick={() => setActiveFilter('all')}
-                  style={{
-                    padding: '0.875rem 2rem',
-                    background: activeFilter === 'all' ? 'linear-gradient(135deg, #28a745 0%, #34d058 100%)' : '#fff',
-                    color: activeFilter === 'all' ? '#fff' : '#28a745',
-                    border: activeFilter === 'all' ? 'none' : '2px solid #e0e0e0',
-                    borderRadius: '50px',
-                    fontSize: '1rem',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: activeFilter === 'all' ? '0 4px 15px rgba(40, 167, 69, 0.3)' : 'none'
-                  }}>
+                <button style={{
+                  padding: '0.875rem 2rem',
+                  background: 'linear-gradient(135deg, #28a745 0%, #34d058 100%)',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '50px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)'
+                }}>
                   All
                 </button>
-                <button 
-                  onClick={() => setActiveFilter('article')}
-                  style={{
-                    padding: '0.875rem 2rem',
-                    background: activeFilter === 'article' ? 'linear-gradient(135deg, #28a745 0%, #34d058 100%)' : '#fff',
-                    color: activeFilter === 'article' ? '#fff' : '#28a745',
-                    border: activeFilter === 'article' ? 'none' : '2px solid #e0e0e0',
-                    borderRadius: '50px',
-                    fontSize: '1rem',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: activeFilter === 'article' ? '0 4px 15px rgba(40, 167, 69, 0.3)' : 'none'
-                  }}>
+                <button style={{
+                  padding: '0.875rem 2rem',
+                  background: '#fff',
+                  color: '#28a745',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '50px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#28a745';
+                  e.currentTarget.style.background = '#f0fff4';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#e0e0e0';
+                  e.currentTarget.style.background = '#fff';
+                }}>
                   Articles
                 </button>
-                <button 
-                  onClick={() => setActiveFilter('case-study')}
-                  style={{
-                    padding: '0.875rem 2rem',
-                    background: activeFilter === 'case-study' ? 'linear-gradient(135deg, #28a745 0%, #34d058 100%)' : '#fff',
-                    color: activeFilter === 'case-study' ? '#fff' : '#28a745',
-                    border: activeFilter === 'case-study' ? 'none' : '2px solid #e0e0e0',
-                    borderRadius: '50px',
-                    fontSize: '1rem',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: activeFilter === 'case-study' ? '0 4px 15px rgba(40, 167, 69, 0.3)' : 'none'
-                  }}>
+                <button style={{
+                  padding: '0.875rem 2rem',
+                  background: '#fff',
+                  color: '#28a745',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '50px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#28a745';
+                  e.currentTarget.style.background = '#f0fff4';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#e0e0e0';
+                  e.currentTarget.style.background = '#fff';
+                }}>
                   Case Studies
                 </button>
-                <button 
-                  onClick={() => setActiveFilter('multimedia')}
-                  style={{
-                    padding: '0.875rem 2rem',
-                    background: activeFilter === 'multimedia' ? 'linear-gradient(135deg, #28a745 0%, #34d058 100%)' : '#fff',
-                    color: activeFilter === 'multimedia' ? '#fff' : '#28a745',
-                    border: activeFilter === 'multimedia' ? 'none' : '2px solid #e0e0e0',
-                    borderRadius: '50px',
-                    fontSize: '1rem',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: activeFilter === 'multimedia' ? '0 4px 15px rgba(40, 167, 69, 0.3)' : 'none'
-                  }}>
+                <button style={{
+                  padding: '0.875rem 2rem',
+                  background: '#fff',
+                  color: '#28a745',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '50px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#28a745';
+                  e.currentTarget.style.background = '#f0fff4';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#e0e0e0';
+                  e.currentTarget.style.background = '#fff';
+                }}>
                   Multimedia
                 </button>
-                <button 
-                  onClick={() => setActiveFilter('white-paper')}
-                  style={{
-                    padding: '0.875rem 2rem',
-                    background: activeFilter === 'white-paper' ? 'linear-gradient(135deg, #28a745 0%, #34d058 100%)' : '#fff',
-                    color: activeFilter === 'white-paper' ? '#fff' : '#28a745',
-                    border: activeFilter === 'white-paper' ? 'none' : '2px solid #e0e0e0',
-                    borderRadius: '50px',
-                    fontSize: '1rem',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: activeFilter === 'white-paper' ? '0 4px 15px rgba(40, 167, 69, 0.3)' : 'none'
-                  }}>
+                <button style={{
+                  padding: '0.875rem 2rem',
+                  background: '#fff',
+                  color: '#28a745',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '50px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#28a745';
+                  e.currentTarget.style.background = '#f0fff4';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#e0e0e0';
+                  e.currentTarget.style.background = '#fff';
+                }}>
                   White Papers
                 </button>
               </div>
@@ -302,9 +284,9 @@ export default function Knowledge() {
 
           {/* Blog Cards Grid */}
           <div className="row g-4 mb-5">
-            {filteredBlogs.map((blog) => (
-            <div key={blog.id} className="col-lg-4 col-md-6">
-              <Link href={`/knowledge/blog-${blog.id}`} style={{ textDecoration: 'none' }}>
+            {/* Blog Card 1 */}
+            <div className="col-lg-4 col-md-6">
+              <Link href="/knowledge/blog-1" style={{ textDecoration: 'none' }}>
                 <div style={{
                   background: '#fff',
                   border: '2px solid #e0e0e0',
@@ -324,7 +306,7 @@ export default function Knowledge() {
                 }}>
                   <div style={{
                     height: '220px',
-                    backgroundImage: `url(/assets/img/${blog.image})`,
+                    backgroundImage: 'url(/assets/img/1tv.jpg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: 'flex',
@@ -332,16 +314,30 @@ export default function Knowledge() {
                     justifyContent: 'center',
                     position: 'relative'
                   }}>
+                    <span style={{
+                      position: 'absolute',
+                      top: '1rem',
+                      left: '1rem',
+                      background: '#fff',
+                      padding: '0.5rem 1rem',
+                      borderRadius: '20px',
+                      fontSize: '0.85rem',
+                      fontWeight: '600',
+                      color: '#333',
+                      border: '1px solid #e0e0e0'
+                    }}>
+                      Blog 1
+                    </span>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
                     <span style={{
                       fontSize: '0.85rem',
-                      color: getCategoryColor(blog.category),
+                      color: '#28a745',
                       fontWeight: '600',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px'
                     }}>
-                      {getCategoryLabel(blog.category)}
+                      ARTICLE
                     </span>
                     <h4 style={{
                       fontSize: '1.3rem',
@@ -351,7 +347,7 @@ export default function Knowledge() {
                       color: '#000',
                       lineHeight: '1.4'
                     }}>
-                      {blog.title}
+                      Understanding Network Infrastructure
                     </h4>
                     <p style={{
                       fontSize: '0.95rem',
@@ -359,7 +355,7 @@ export default function Knowledge() {
                       lineHeight: '1.6',
                       marginBottom: '1rem'
                     }}>
-                      {blog.excerpt}
+                      A comprehensive guide to building and maintaining robust network infrastructure for modern businesses.
                     </p>
                     <div style={{
                       display: 'flex',
@@ -368,16 +364,393 @@ export default function Knowledge() {
                       fontSize: '0.85rem',
                       color: '#999'
                     }}>
-                      <span>{blog.date}</span>
-                      <span style={{ color: getCategoryColor(blog.category), fontWeight: '600' }}>
-                        {blog.category === 'multimedia' ? 'Watch Now →' : 'Read More →'}
-                      </span>
+                      <span>Nov 20, 2025</span>
+                      <span style={{ color: '#28a745', fontWeight: '600' }}>Read More →</span>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            ))}
+
+            {/* Blog Card 2 */}
+            <div className="col-lg-4 col-md-6">
+              <Link href="/knowledge/blog-2" style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: '#fff',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  height: '100%'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '220px',
+                    backgroundImage: 'url(/assets/img/15.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    position: 'relative'
+                  }}>
+                    <span style={{
+                      position: 'absolute',
+                      top: '1rem',
+                      left: '1rem',
+                      background: '#fff',
+                      padding: '0.5rem 1rem',
+                      borderRadius: '20px',
+                      fontSize: '0.85rem',
+                      fontWeight: '600',
+                      color: '#333',
+                      border: '1px solid #e0e0e0'
+                    }}>
+                      Blog 2
+                    </span>
+                  </div>
+                  <div style={{ padding: '1.5rem' }}>
+                    <span style={{
+                      fontSize: '0.85rem',
+                      color: '#fd9330',
+                      fontWeight: '600',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      CASE STUDY
+                    </span>
+                    <h4 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '700',
+                      marginTop: '0.5rem',
+                      marginBottom: '0.75rem',
+                      color: '#000',
+                      lineHeight: '1.4'
+                    }}>
+                      Enterprise Connectivity Success
+                    </h4>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: '#666',
+                      lineHeight: '1.6',
+                      marginBottom: '1rem'
+                    }}>
+                      How we helped a Fortune 500 company achieve 99.9% uptime with our managed network solutions.
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontSize: '0.85rem',
+                      color: '#999'
+                    }}>
+                      <span>Nov 18, 2025</span>
+                      <span style={{ color: '#fd9330', fontWeight: '600' }}>Read More →</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Blog Card 3 */}
+            <div className="col-lg-4 col-md-6">
+              <Link href="/knowledge/blog-3" style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: '#fff',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  height: '100%'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '220px',
+                    backgroundImage: 'url(/assets/img/16.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                  </div>
+                  <div style={{ padding: '1.5rem' }}>
+                    <span style={{
+                      fontSize: '0.85rem',
+                      color: '#28a745',
+                      fontWeight: '600',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      GUIDE
+                    </span>
+                    <h4 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '700',
+                      marginTop: '0.5rem',
+                      marginBottom: '0.75rem',
+                      color: '#000',
+                      lineHeight: '1.4'
+                    }}>
+                      Cybersecurity Best Practices
+                    </h4>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: '#666',
+                      lineHeight: '1.6',
+                      marginBottom: '1rem'
+                    }}>
+                      Essential security measures every business should implement to protect their network infrastructure.
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontSize: '0.85rem',
+                      color: '#999'
+                    }}>
+                      <span>Nov 15, 2025</span>
+                      <span style={{ color: '#28a745', fontWeight: '600' }}>Read More →</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Blog Card 4 */}
+            <div className="col-lg-4 col-md-6">
+              <Link href="/knowledge/blog-4" style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: '#fff',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  height: '100%'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '220px',
+                    backgroundImage: 'url(/assets/img/18.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                  </div>
+                  <div style={{ padding: '1.5rem' }}>
+                    <span style={{
+                      fontSize: '0.85rem',
+                      color: '#fd9330',
+                      fontWeight: '600',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      WHITE PAPER
+                    </span>
+                    <h4 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '700',
+                      marginTop: '0.5rem',
+                      marginBottom: '0.75rem',
+                      color: '#000',
+                      lineHeight: '1.4'
+                    }}>
+                      5G and Future Connectivity
+                    </h4>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: '#666',
+                      lineHeight: '1.6',
+                      marginBottom: '1rem'
+                    }}>
+                      Exploring the impact of 5G technology on enterprise networks and IoT infrastructure.
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontSize: '0.85rem',
+                      color: '#999'
+                    }}>
+                      <span>Nov 12, 2025</span>
+                      <span style={{ color: '#fd9330', fontWeight: '600' }}>Read More →</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Blog Card 5 */}
+            <div className="col-lg-4 col-md-6">
+              <Link href="/knowledge/blog-5" style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: '#fff',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  height: '100%'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '220px',
+                    backgroundImage: 'url(/assets/img/11.jpeg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                  </div>
+                  <div style={{ padding: '1.5rem' }}>
+                    <span style={{
+                      fontSize: '0.85rem',
+                      color: '#28a745',
+                      fontWeight: '600',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      ARTICLE
+                    </span>
+                    <h4 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '700',
+                      marginTop: '0.5rem',
+                      marginBottom: '0.75rem',
+                      color: '#000',
+                      lineHeight: '1.4'
+                    }}>
+                      Cloud Integration Strategies
+                    </h4>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: '#666',
+                      lineHeight: '1.6',
+                      marginBottom: '1rem'
+                    }}>
+                      Seamlessly integrate cloud services with your existing network infrastructure for maximum efficiency.
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontSize: '0.85rem',
+                      color: '#999'
+                    }}>
+                      <span>Nov 10, 2025</span>
+                      <span style={{ color: '#28a745', fontWeight: '600' }}>Read More →</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Blog Card 6 */}
+            <div className="col-lg-4 col-md-6">
+              <Link href="/knowledge/blog-6" style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: '#fff',
+                  border: '2px solid #e0e0e0',
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  height: '100%'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  <div style={{
+                    height: '220px',
+                    backgroundImage: 'url(/assets/img/111.jpeg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                  </div>
+                  <div style={{ padding: '1.5rem' }}>
+                    <span style={{
+                      fontSize: '0.85rem',
+                      color: '#fd9330',
+                      fontWeight: '600',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      MULTIMEDIA
+                    </span>
+                    <h4 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: '700',
+                      marginTop: '0.5rem',
+                      marginBottom: '0.75rem',
+                      color: '#000',
+                      lineHeight: '1.4'
+                    }}>
+                      Network Setup Video Tutorial
+                    </h4>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: '#666',
+                      lineHeight: '1.6',
+                      marginBottom: '1rem'
+                    }}>
+                      Watch our step-by-step video guide on setting up enterprise-grade network infrastructure.
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontSize: '0.85rem',
+                      color: '#999'
+                    }}>
+                      <span>Nov 8, 2025</span>
+                      <span style={{ color: '#fd9330', fontWeight: '600' }}>Watch Now →</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Pagination */}

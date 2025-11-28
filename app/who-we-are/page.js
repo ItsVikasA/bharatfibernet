@@ -5,7 +5,7 @@ import AboutTabs from "@/components/AboutTabs";
 
 const page = () => {
   return (
-    <NextLayout header={1} footer={1}>
+    <NextLayout>
       {/*<< Breadcrumb Section Start >>*/}
       <Breadcrumb title="Who We Are" />
       
@@ -14,7 +14,7 @@ const page = () => {
 
       {/* Screen 2: Trusted by Businesses */}
       <section className="about-section fix section-padding pt-0" style={{ 
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/assets/img/i1.jpeg)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/assets/img/1.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -23,7 +23,7 @@ const page = () => {
           <div className="row g-4 align-items-center">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="about-image-3">
-                <img src="/assets/img/i2.jpeg" alt="Trusted Business Connectivity" style={{width: '100%', height: 'auto', minHeight: '400px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 10px 40px rgba(0,0,0,0.15)'}} />
+                <img src="assets/img/i1.jpeg" alt="Trusted Business Connectivity" />
               </div>
             </div>
             <div className="col-lg-6">

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import FunFactCounter from "@/components/FunFactCounter";
 import Pricing from "@/components/Pricing";
 import { TestimonialSlider1 } from "@/components/TestimonialSlider";
@@ -9,6 +12,8 @@ import GuidanceForm from "@/components/GuidanceForm";
 
 
 const page = () => {
+  const [activeTab, setActiveTab] = useState('corporate');
+
   return (
     <NextLayout header={1}>
       <HeroSlider />
@@ -62,11 +67,11 @@ const page = () => {
     <div className="row justify-content-center">
       <div className="col-lg-10">
         <div className="section-title text-center">
-          <h2 className="wow fadeInUp" data-wow-delay=".2s">
+          <h2 className="wow fadeInUp" data-wow-delay=".2s" style={{color: 'var(--theme)'}}>
             Andhra & Telangana’s Most Trusted <br />
             Enterprise IT Network
           </h2>
-          <p className="mt-3 wow fadeInUp" data-wow-delay=".3s">
+          <p className="mt-3 wow fadeInUp" data-wow-delay=".3s" style={{color: 'white'}}>
             Engineered for uptime, built for speed, trusted by businesses.
           </p>
         </div>
@@ -126,7 +131,7 @@ const page = () => {
       <div className="container">
     {/* Heading */}
     <div className="section-title text-center">
-      <h2 className="wow fadeInUp" data-wow-delay=".2s">
+      <h2 className="wow fadeInUp" data-wow-delay=".2s" style={{color: 'var(--theme)'}}>
         A Plan for Everyone.{" "}
         <span className="plan-explore-link">Explore Yours.</span>
       </h2>
@@ -136,15 +141,24 @@ const page = () => {
     <div className="row justify-content-center mt-4">
       <div className="col-lg-10">
         <div className="plan-tabs d-flex flex-wrap justify-content-center">
-          <Link href="/ill" className="plan-tab active">
+          <button 
+            onClick={() => setActiveTab('corporate')}
+            className={`plan-tab ${activeTab === 'corporate' ? 'active' : ''}`}
+          >
             Corporate Leased Lines
-          </Link>
-          <Link href="/" className="plan-tab">
+          </button>
+          <button 
+            onClick={() => setActiveTab('business')}
+            className={`plan-tab ${activeTab === 'business' ? 'active' : ''}`}
+          >
             Business SME Plans
-          </Link>
-          <Link href="/" className="plan-tab">
+          </button>
+          <button 
+            onClick={() => setActiveTab('home')}
+            className={`plan-tab ${activeTab === 'home' ? 'active' : ''}`}
+          >
             Home Broadband Plans
-          </Link>
+          </button>
         </div>
       </div>
     </div>
@@ -152,7 +166,7 @@ const page = () => {
     {/* Subheading */}
     <div className="row justify-content-center mt-5">
       <div className="col-lg-10 text-center">
-        <p className="plan-subtitle">
+        <p className="plan-subtitle" style={{color: 'white'}}>
           Tailored for You – Find Your Ideal Plan!
         </p>
       </div>
@@ -160,173 +174,1040 @@ const page = () => {
 
     {/* Plans row */}
     <div className="row g-4 mt-3 justify-content-center">
-      {/* Express 4000 */}
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="plan-card">
-          <div className="plan-card-header">
-            <div className="plan-icon">
-              <img src="assets/img/hero/04.png" alt="Express 4000" />
+      {activeTab === 'corporate' && (
+        <>
+          {/* B-MAX 500 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="B-MAX 500" />
+                </div>
+                <h4>B-MAX 500</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>60 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Download Speed 60 Mbps | FUP 600 GB | Post-FUP 4 Mbps</p>
+                <p className="plan-price">₹ 500 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>60 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>600 GB</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Speed Post FUP: <strong>4 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
             </div>
-            <h4>Express 4000</h4>
-            <p className="plan-price">₹ 4000 / Month</p>
           </div>
 
-          <ul className="plan-features">
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>500 Mbps</strong> Download Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>500 Mbps</strong> Upload Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>5 TB</strong> FUP Limit
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>10 Mbps</strong> Speed Post FUP
-              </span>
-            </li>
-          </ul>
+          {/* B-MAX 600 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/05.png" alt="B-MAX 600" />
+                </div>
+                <h4>B-MAX 600</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>100 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Download Speed 100 Mbps | FUP 1000 GB | Post-FUP 10 Mbps</p>
+                <p className="plan-price">₹ 600 / Month</p>
+              </div>
 
-          <button className="plan-btn">Get Started</button>
-        </div>
-      </div>
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>100 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>1000 GB</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Speed Post FUP: <strong>10 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
 
-      {/* Express 6000 */}
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="plan-card">
-          <div className="plan-card-header">
-            <div className="plan-icon">
-              <img src="assets/img/hero/05.png" alt="Express 6000" />
+              <button className="plan-btn">Get Started</button>
             </div>
-            <h4>Express 6000</h4>
-            <p className="plan-price">₹ 6000 / Month</p>
           </div>
 
-          <ul className="plan-features">
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>1 Gbps</strong> Download Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>1 Gbps</strong> Upload Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>6 TB</strong> FUP Limit
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>12 Mbps</strong> Speed Post FUP
-              </span>
-            </li>
-          </ul>
+          {/* B-MAX 1000 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/06.png" alt="B-MAX 1000" />
+                </div>
+                <h4>B-MAX 1000</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>200 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Download Speed 200 Mbps | FUP 2000 GB | Post-FUP 10 Mbps</p>
+                <p className="plan-price">₹ 1000 / Month</p>
+              </div>
 
-          <button className="plan-btn">Get Started</button>
-        </div>
-      </div>
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>200 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>2000 GB</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Speed Post FUP: <strong>10 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
 
-      {/* Express 8000 */}
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="plan-card">
-          <div className="plan-card-header">
-            <div className="plan-icon">
-              <img src="assets/img/hero/06.png" alt="Express 8000" />
+              <button className="plan-btn">Get Started</button>
             </div>
-            <h4>Express 8000</h4>
-            <p className="plan-price">₹ 8000 / Month</p>
           </div>
 
-          <ul className="plan-features">
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>1 Gbps</strong> Download Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>1 Gbps</strong> Upload Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>8 TB</strong> FUP Limit
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>12 Mbps</strong> Speed Post FUP
-              </span>
-            </li>
-          </ul>
+          {/* B-MAX 1200 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/07.png" alt="B-MAX 1200" />
+                </div>
+                <h4>B-MAX 1200</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>300 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Download Speed 300 Mbps | FUP Unlimited | Post-FUP 300 Mbps</p>
+                <p className="plan-price">₹ 1200 / Month</p>
+              </div>
 
-          <button className="plan-btn">Get Started</button>
-        </div>
-      </div>
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>300 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Speed Post FUP: <strong>300 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
 
-      {/* Express 10000 */}
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="plan-card">
-          <div className="plan-card-header">
-            <div className="plan-icon">
-              <img src="assets/img/hero/07.png" alt="Express 10000" />
+              <button className="plan-btn">Get Started</button>
             </div>
-            <h4>Express 10000</h4>
-            <p className="plan-price">₹ 10000 / Month</p>
           </div>
 
-          <ul className="plan-features">
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>1 Gbps</strong> Download Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>1 Gbps</strong> Upload Speed
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>10 TB</strong> FUP Limit
-              </span>
-            </li>
-            <li>
-              <i className="fas fa-check" />
-              <span>
-                <strong>15 Mbps</strong> Speed Post FUP
-              </span>
-            </li>
-          </ul>
+          {/* B-MAX 1700 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="B-MAX 1700" />
+                </div>
+                <h4>B-MAX 1700</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>400 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Download Speed 400 Mbps | FUP Unlimited | Post-FUP 400 Mbps</p>
+                <p className="plan-price">₹ 1700 / Month</p>
+              </div>
 
-          <button className="plan-btn">Get Started</button>
-        </div>
-      </div>
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>400 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Speed Post FUP: <strong>400 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+        </>
+      )}
+
+      {activeTab === 'business' && (
+        <>
+          {/* Express 4000 Business */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="Express 4000" />
+                </div>
+                <h4>Express 4000</h4>
+                <p className="plan-price">₹ 4000 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>500 Mbps</strong> Download Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>500 Mbps</strong> Upload Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>5 TB</strong> FUP Limit
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>10 Mbps</strong> Speed Post FUP
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Express 6000 Business */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/05.png" alt="Express 6000" />
+                </div>
+                <h4>Express 6000</h4>
+                <p className="plan-price">₹ 6000 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Download Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Upload Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>6 TB</strong> FUP Limit
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>12 Mbps</strong> Speed Post FUP
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Express 8000 Business */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/06.png" alt="Express 8000" />
+                </div>
+                <h4>Express 8000</h4>
+                <p className="plan-price">₹ 8000 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Download Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Upload Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>8 TB</strong> FUP Limit
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>12 Mbps</strong> Speed Post FUP
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Express 10000 Business */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/07.png" alt="Express 10000" />
+                </div>
+                <h4>Express 10000</h4>
+                <p className="plan-price">₹ 10000 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Download Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Upload Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>10 TB</strong> FUP Limit
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>15 Mbps</strong> Speed Post FUP
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Express 12000 Business */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="Express 12000" />
+                </div>
+                <h4>Express 12000</h4>
+                <p className="plan-price">₹ 12000 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Download Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>1 Gbps</strong> Upload Speed
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>15 TB</strong> FUP Limit
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>15 Mbps</strong> Speed Post FUP
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+        </>
+      )}
+
+      {activeTab === 'home' && (
+        <>
+          {/* BharatXpress-150 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="BharatXpress-150" />
+                </div>
+                <h4>BHARATXPRESS-150</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>150 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Unlimited Data | ₹699 / month</p>
+                <p className="plan-price">₹ 699 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>150 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Post-FUP Speed: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* BharatXpress-200 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/05.png" alt="BharatXpress-200" />
+                </div>
+                <h4>BHARATXPRESS-200</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>200 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Unlimited Data | ₹999 / month</p>
+                <p className="plan-price">₹ 999 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>200 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Post-FUP Speed: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* BharatXpress-300 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/06.png" alt="BharatXpress-300" />
+                </div>
+                <h4>BHARATXPRESS-300</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>300 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Unlimited Data | ₹1,199 / month</p>
+                <p className="plan-price">₹ 1,199 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>300 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Post-FUP Speed: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* BharatXpress-400 */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/07.png" alt="BharatXpress-400" />
+                </div>
+                <h4>BHARATXPRESS-400</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>400 Mbps</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Unlimited Data | ₹1,499 / month</p>
+                <p className="plan-price">₹ 1,499 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>400 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Post-FUP Speed: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Section Heading - Combo Plans */}
+          <div className="col-12 mt-5 mb-4 text-center">
+            <h3 style={{fontSize: '32px', fontWeight: 'bold', color: 'var(--theme)', display: 'inline-block'}}>
+              Combo Plans (Internet + IPTV)
+            </h3>
+          </div>
+
+          {/* Combo 100 Mbps + IPTV */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="Combo 100" />
+                </div>
+                <h4>BHARATXPRESS COMBO-100</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>100 Mbps + IPTV</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Free IPTV on 6-month plan | Free IPTV + 2 months extra on 12-month plan</p>
+                <p className="plan-price">₹ 999 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>100 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>Includes IPTV</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Combo 200 Mbps + IPTV */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/05.png" alt="Combo 200" />
+                </div>
+                <h4>BHARATXPRESS COMBO-200</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0', color: 'var(--theme)'}}>200 Mbps + IPTV</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>Free IPTV on 6-month plan | Free IPTV + 2 months extra on 12-month plan</p>
+                <p className="plan-price">₹ 1,199 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Download Speed: <strong>200 Mbps</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>Includes IPTV</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    FUP Limit: <strong>Unlimited</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    + GST 18%
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Section Heading - OTT Entertainment */}
+          <div className="col-12 mt-5 mb-4 text-center">
+            <h3 style={{fontSize: '32px', fontWeight: 'bold', color: 'var(--theme)', display: 'inline-block'}}>
+              OTT Entertainment Packs
+            </h3>
+          </div>
+
+          {/* OTT 1 Month */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="OTT 1 Month" />
+                </div>
+                <h4>OTT PLATFORMS (18)</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>1 Month Plan</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹170 / month</p>
+                <p className="plan-price">₹ 170 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Access <strong>18 OTT Platforms</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Includes: JioHotstar, ZEE5, SonyLIV, FanCode, SunNXT, Hungama
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    +12 more platforms
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Price: ₹170 (1 Month)
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* OTT 6 Months */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/05.png" alt="OTT 6 Months" />
+                </div>
+                <h4>OTT PLATFORMS (18)</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>6 Months Plan</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹1,020 (6 months)</p>
+                <p className="plan-price">₹ 1,020 / 6 Months</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Access <strong>18 OTT Platforms</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Includes: JioHotstar, ZEE5, SonyLIV, FanCode, SunNXT, Hungama
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    +12 more platforms
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Price: ₹1,020 (6 Months)
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* OTT 12 Months */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/06.png" alt="OTT 12 Months" />
+                </div>
+                <h4>OTT PLATFORMS (18)</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>12 Months Plan</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹2,040 (12 months)</p>
+                <p className="plan-price">₹ 2,040 / 12 Months</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Access <strong>18 OTT Platforms</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Includes: JioHotstar, ZEE5, SonyLIV, FanCode, SunNXT, Hungama
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    +12 more platforms
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Price: ₹2,040 (12 Months)
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Section Heading - IPTV Channel Packs */}
+          <div className="col-12 mt-5 mb-4 text-center">
+            <h3 style={{fontSize: '32px', fontWeight: 'bold', color: 'var(--theme)', display: 'inline-block'}}>
+              IPTV Channel Packs
+            </h3>
+          </div>
+
+          {/* Telugu Gold HD Pack */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/04.png" alt="Telugu Gold HD" />
+                </div>
+                <h4 style={{color: 'white'}}>TELUGU GOLD HD PACK</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>430 Channels</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
+                <p className="plan-price">₹ 300 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>430 Channels</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Monthly: ₹300
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    6 Months: ₹1,800
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    12 Months: ₹3,600
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Hindi Gold HD Pack */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/05.png" alt="Hindi Gold HD" />
+                </div>
+                <h4 style={{color: 'white'}}>HINDI GOLD HD PACK</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>440 Channels</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
+                <p className="plan-price">₹ 300 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>440 Channels</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Monthly: ₹300
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    6 Months: ₹1,800
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    12 Months: ₹3,600
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Hindi Telugu Silver Pack */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/06.png" alt="Hindi Telugu Silver" />
+                </div>
+                <h4 style={{color: 'white'}}>HINDI TELUGU SILVER PACK</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>430 Channels</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
+                <p className="plan-price">₹ 300 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>430 Channels</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Monthly: ₹300
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    6 Months: ₹1,800
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    12 Months: ₹3,600
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+
+          {/* Hindi Telugu Gold Pack */}
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="plan-card">
+              <div className="plan-card-header">
+                <div className="plan-icon">
+                  <img src="assets/img/hero/07.png" alt="Hindi Telugu Gold" />
+                </div>
+                <h4 style={{color: 'white'}}>HINDI TELUGU GOLD PACK</h4>
+                <h5 style={{fontSize: '24px', fontWeight: 'bold', margin: '10px 0'}}>450 Channels</h5>
+                <p style={{fontSize: '14px', color: '#666', marginBottom: '10px'}}>₹300 / month | ₹1,800 (6 months) | ₹3,600 (12 months)</p>
+                <p className="plan-price">₹ 300 / Month</p>
+              </div>
+
+              <ul className="plan-features">
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    <strong>450 Channels</strong>
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    Monthly: ₹300
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    6 Months: ₹1,800
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <span>
+                    12 Months: ₹3,600
+                  </span>
+                </li>
+              </ul>
+
+              <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   </div>
 </section>
@@ -358,7 +1239,7 @@ const page = () => {
     {/* Heading */}
     <div className="section-title text-center mb-5">
       <h2 className="wow fadeInUp" data-wow-delay=".2s" style={{ 
-        color: '#1a1a1a',
+        color: 'var(--theme)',
         fontWeight: '700'
       }}>
         What Industry Leaders Are Saying
