@@ -5,7 +5,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 
 const page = () => {
   return (
-    <NextLayout>
+    <NextLayout header={1} footer={1}>
       <Breadcrumb pageName="System Integration" pageTitle="Smart Integration. Seamless Infrastructure." />
       
       {/* Screen 1: Hero Section with Form */}
