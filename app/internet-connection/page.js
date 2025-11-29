@@ -3,47 +3,161 @@ import NextLayout from "@/layouts/NextLayout";
 
 export const metadata = {
   title: "Internet Connection Help Guide | Bharat Fibernet",
-  description: "Simple fixes for common internet issues",
+  description: "Let's get your connection back up",
 };
 
 export default function InternetConnection() {
   return (
     <NextLayout header={1} footer={1}>
-      <Breadcrumb pageName="Help Guide" />
+      <Breadcrumb pageName="Internet Connection" />
 
-      {/* Screen 1 - Help Guide Header */}
+      {/* Header Section */}
       <section className="section-padding" style={{ 
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/assets/img/1.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}>
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center">
-              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem' }}>
-                Bharat Fibernet Help Guide
+            <div className="col-12 text-center mb-5">
+              <h1 style={{ fontSize: '3rem', fontWeight: '700', marginBottom: '2rem', color: '#1a1a1a' }}>
+                Let's get your connection back up.
               </h1>
-              
-              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#333' }}>
-                Simple fixes for common internet issues
-              </h2>
-              
-              <p style={{ 
-                fontSize: '1.1rem', 
-                lineHeight: '1.8', 
-                color: '#333', 
-                maxWidth: '1000px', 
-                margin: '0 auto'
+            </div>
+          </div>
+
+          {/* FAQ Buttons */}
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div style={{
+                display: 'flex',
+                gap: '1rem',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                marginBottom: '3rem'
               }}>
-                Whether you're a home user or managing a large enterprise, this section helps you quickly find clear answers to everyday connectivity questions — no technical help needed.
-              </p>
+                <a href="#question1" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Why is my internet so slow?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question2" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Wi-Fi keeps dropping — what can I do?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question3" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Is there an outage in my area?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question4" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      How can I boost my Wi-Fi speed?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question5" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Router's on but no internet — why?
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Help Content Section */}
+      {/* Content Section */}
       <section className="section-padding" style={{ 
         backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/2.jpg)',
         backgroundSize: 'cover',
@@ -55,132 +169,138 @@ export default function InternetConnection() {
             <div className="col-lg-10">
               
               {/* Question 1 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question1" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
-                  1. Why Is My Internet So Slow?
+                  1. Why is my internet so slow?
                 </h3>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
-                  Internet speed can depend on several factors, such as the number of connected devices or the network setup.
+                  Slow internet can be frustrating, but there are several common causes and quick fixes:
                 </p>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For Homes</h4>
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Common Causes:</h4>
                 <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
-                  <li>Keep your router in an open, central spot to avoid weak signal zones.</li>
-                  <li>Disconnect unused devices that might be sharing your Wi-Fi.</li>
-                  <li>Restart your router occasionally to refresh performance.</li>
+                  <li>Too many devices connected to your network</li>
+                  <li>Router placement (walls, distance, interference)</li>
+                  <li>Background downloads or updates running</li>
+                  <li>Peak usage hours in your area</li>
+                  <li>Outdated router firmware</li>
                 </ul>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For SMEs and Enterprises</h4>
-                <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1rem' }}>
-                  <li>Review current bandwidth usage; large file uploads or software updates can affect performance.</li>
-                  <li>Use wired (LAN) connections for critical systems that need consistent speed.</li>
-                  <li>Make sure your router or switch firmware is up to date.</li>
-                </ul>
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Quick Fixes:</h4>
+                <ol style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
+                  <li>Restart your router (unplug for 30 seconds, then plug back in)</li>
+                  <li>Move closer to the router or reposition it to a central location</li>
+                  <li>Disconnect unused devices</li>
+                  <li>Check if anyone is streaming or downloading large files</li>
+                  <li>Run a speed test at different times to identify patterns</li>
+                </ol>
                 
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', fontStyle: 'italic' }}>
-                  If the issue continues, note your speed test results and share them with our support team for review.
+                  <strong>Still slow?</strong> Contact our support team to check for network issues or upgrade options.
                 </p>
               </div>
 
               {/* Question 2 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question2" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
-                  2. Wi-Fi Keeps Dropping — What Can I Do?
+                  2. Wi-Fi keeps dropping — what can I do?
                 </h3>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
-                  A Wi-Fi connection can drop occasionally due to placement, range, or signal interference.
+                  If your Wi-Fi connection keeps disconnecting:
                 </p>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For Homes</h4>
-                <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
-                  <li>Keep your router away from walls, metal objects, and large appliances.</li>
-                  <li>Reboot your router and connected devices when you notice signal drops.</li>
-                  <li>Update your router firmware to ensure optimal performance.</li>
-                </ul>
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Troubleshooting Steps:</h4>
+                <ol style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
+                  <li><strong>Restart your router:</strong> Unplug it for 30 seconds, then reconnect</li>
+                  <li><strong>Check router placement:</strong> Keep it away from microwaves, cordless phones, and thick walls</li>
+                  <li><strong>Update router firmware:</strong> Log into your router settings and check for updates</li>
+                  <li><strong>Change Wi-Fi channel:</strong> Switch to a less congested channel (1, 6, or 11 for 2.4GHz)</li>
+                  <li><strong>Reduce interference:</strong> Move electronic devices away from the router</li>
+                </ol>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For SMEs and Enterprises</h4>
-                <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1rem' }}>
-                  <li>Ensure there's sufficient access point coverage for all departments or floors.</li>
-                  <li>Limit the number of devices connected to a single router.</li>
-                  <li>Consider upgrading to a dual-band or mesh network for broader, more stable connectivity.</li>
-                </ul>
-                
-                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', fontStyle: 'italic' }}>
-                  If disconnections happen frequently, share the timings and pattern with support to help diagnose the cause faster.
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For Persistent Issues:</h4>
+                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333' }}>
+                  Contact Bharat Fibernet support to check for line issues or schedule a technician visit.
                 </p>
               </div>
 
               {/* Question 3 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question3" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
-                  3. Is There An Outage In My Area?
+                  3. Is there an outage in my area?
                 </h3>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
-                  Sometimes, connectivity may be affected by maintenance or temporary network activity.
+                  To check if there's a service outage:
                 </p>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>To check:</h4>
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Quick Check:</h4>
                 <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
-                  <li>Log in to the <a href="/crm" style={{ color: '#0066cc', textDecoration: 'underline' }}>BharatFibrenet CRM</a> portal to check your connection status or report an issue.</li>
-                  <li>You can also ask nearby users or offices if they're experiencing similar downtime.</li>
-                  <li>If required, raise a support ticket directly through the CRM for quick verification and response.</li>
+                  <li>Log in to your Bharat Fibernet account and check the <strong>Service Status</strong> section</li>
+                  <li>Visit our website's outage map (if available)</li>
+                  <li>Check our social media pages for announcements</li>
+                  <li>Call our helpline: +91 7799906341 / 040-42027737</li>
                 </ul>
                 
-                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333' }}>
-                  BharatFibrenet actively monitors its network through real-time CRM tracking to ensure smooth, consistent connectivity for all users.
+                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
+                  If there's a known outage, our team is already working on it. You'll receive updates via SMS or email once service is restored.
+                </p>
+                
+                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', fontStyle: 'italic' }}>
+                  <strong>No outage reported?</strong> The issue might be specific to your connection. Contact support for assistance.
                 </p>
               </div>
 
               {/* Question 4 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question4" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
-                  4. How Can I Boost My Wi-Fi Speed?
+                  4. How can I boost my Wi-Fi speed?
                 </h3>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
-                  A few adjustments can make your Wi-Fi reach stronger and more consistent.
+                  Here are proven ways to improve your Wi-Fi performance:
                 </p>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For Homes</h4>
-                <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
-                  <li>Place the router at a higher, central point, ideally above waist height.</li>
-                  <li>Avoid keeping it inside closed shelves or behind furniture.</li>
-                  <li>Use a Wi-Fi extender if you have multiple floors or larger rooms.</li>
-                </ul>
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Optimization Tips:</h4>
+                <ol style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
+                  <li><strong>Router Placement:</strong> Place it in a central, elevated location away from walls and obstacles</li>
+                  <li><strong>Use 5GHz Band:</strong> If your router supports dual-band, use 5GHz for faster speeds (shorter range)</li>
+                  <li><strong>Limit Connected Devices:</strong> Disconnect devices you're not using</li>
+                  <li><strong>Use Ethernet:</strong> For gaming or streaming, connect directly via cable</li>
+                  <li><strong>Update Devices:</strong> Keep your router firmware and device drivers updated</li>
+                  <li><strong>Change Password:</strong> Ensure no unauthorized users are on your network</li>
+                  <li><strong>Wi-Fi Extenders:</strong> Consider using range extenders for larger homes</li>
+                </ol>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For SMEs and Enterprises</h4>
-                <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1rem' }}>
-                  <li>Deploy access points in high-usage areas to ensure even coverage.</li>
-                  <li>Switch to the 5GHz band for faster data transfer at shorter ranges.</li>
-                  <li>Review your internal network layout to minimize overlap or congestion.</li>
-                  <li>Our team can guide you with placement and coverage suggestions suited to your environment.</li>
-                </ul>
+                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', fontStyle: 'italic' }}>
+                  <strong>Need more speed?</strong> Check if you're eligible for a plan upgrade.
+                </p>
               </div>
 
               {/* Question 5 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question5" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
-                  5. Router's On But No Internet — Why?
+                  5. Router's on but no internet — why?
                 </h3>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
-                  When the router appears active but there's no connection, it may be due to loose connections or local settings.
+                  If your router lights are on but you have no internet access:
                 </p>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For All Users</h4>
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Troubleshooting Steps:</h4>
+                <ol style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
+                  <li><strong>Check the WAN/Internet light:</strong> It should be solid or blinking green. If it's red or off, there's a line issue</li>
+                  <li><strong>Restart the router:</strong> Unplug for 30 seconds, then reconnect</li>
+                  <li><strong>Check cables:</strong> Ensure the WAN/Internet cable is securely connected</li>
+                  <li><strong>Try another device:</strong> Check if other devices can connect to verify if it's device-specific</li>
+                  <li><strong>Forget and reconnect:</strong> On your device, forget the Wi-Fi network and reconnect with the password</li>
+                </ol>
+                
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>Check Your Account:</h4>
                 <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1.5rem' }}>
-                  <li>Check that all cables are firmly connected to your router and wall socket.</li>
-                  <li>Restart your router — unplug it for 10 seconds, then plug it back in.</li>
-                  <li>Try using another device (like your phone or laptop) to see if the issue is the same.</li>
-                  <li>Look at the router lights — if the Internet or WAN light is off or blinking, note it down before contacting support.</li>
+                  <li>Verify your account is active and payments are up to date</li>
+                  <li>Check for any service suspension notices</li>
                 </ul>
                 
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For Enterprises</h4>
-                <ul style={{ fontSize: '1.05rem', lineHeight: '2', color: '#333', marginBottom: '1rem' }}>
-                  <li>If your office uses a VPN or private network, check with your IT team to make sure it's connected correctly.</li>
-                  <li>Ask your network administrator to confirm that local firewall or proxy settings aren't blocking the connection.</li>
-                </ul>
-                
-                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', fontStyle: 'italic' }}>
-                  Our technical support team can assist with step-by-step verification if the issue continues.
+                <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333' }}>
+                  If none of these work, contact Bharat Fibernet support for technical assistance.
                 </p>
               </div>
 
@@ -190,7 +310,7 @@ export default function InternetConnection() {
                   6. Need More Assistance?
                 </h3>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333', marginBottom: '1.5rem' }}>
-                  If you've reviewed the steps above and still need help, Bharat Fibernet's support channels are always available.
+                  If you're still experiencing connection issues, our technical support team is here to help.
                 </p>
                 
                 <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#333', marginBottom: '0.5rem' }}>
@@ -200,8 +320,9 @@ export default function InternetConnection() {
                   <strong>Email:</strong> info@bharatvoip.com
                 </p>
                 
+                <h4 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '1rem' }}>For Enterprises:</h4>
                 <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#333' }}>
-                  Our goal is to make your connectivity experience smooth, informed, and uninterrupted, whether at home, in your office, or across enterprise networks.
+                  Contact your dedicated Network Engineer or Account Manager for priority support.
                 </p>
               </div>
 
@@ -214,8 +335,8 @@ export default function InternetConnection() {
                 boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
               }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', lineHeight: '1.4', color: '#333' }}>
-                  At Bharat Fibernet, we believe good connections go beyond speed —<br />
-                  they begin with clarity, support, and trust.
+                  At Bharat Fibernet, we're committed to keeping you<br />
+                  connected, always.
                 </h3>
               </div>
 

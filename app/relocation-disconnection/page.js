@@ -13,31 +13,145 @@ export default function RelocationDisconnection() {
 
       {/* Header Section */}
       <section className="section-padding" style={{ 
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/3.jpg)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/assets/img/3.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}>
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center">
-              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem' }}>
-                Bharat Fibernet Help Guide
+            <div className="col-12 text-center mb-5">
+              <h1 style={{ fontSize: '3rem', fontWeight: '700', marginBottom: '2rem', color: '#1a1a1a' }}>
+                Moving or closing your connection?
               </h1>
-              
-              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#333' }}>
-                Stay connected wherever you move — or close your account with ease.
-              </h2>
-              
-              <p style={{ 
-                fontSize: '1.1rem', 
-                lineHeight: '1.8', 
-                color: '#333', 
-                maxWidth: '1000px', 
-                margin: '0 auto'
+            </div>
+          </div>
+
+          {/* FAQ Buttons */}
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div style={{
+                display: 'flex',
+                gap: '1rem',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                marginBottom: '3rem'
               }}>
-                If you're moving homes, upgrading your office, or closing your account, this section helps you manage relocation or disconnection requests quickly and without hassle.
-              </p>
+                <a href="#question1" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      How do I shift my connection?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question2" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Can I keep my plan after moving?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question3" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      What's the process for disconnection?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question4" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      How long does relocation take?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question5" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Are there any charges for closure?
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -55,7 +169,7 @@ export default function RelocationDisconnection() {
             <div className="col-lg-10">
               
               {/* Question 1 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question1" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   1. How do I shift my connection?
                 </h3>
@@ -83,7 +197,7 @@ export default function RelocationDisconnection() {
               </div>
 
               {/* Question 2 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question2" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   2. Can I keep my plan after moving?
                 </h3>
@@ -105,7 +219,7 @@ export default function RelocationDisconnection() {
               </div>
 
               {/* Question 3 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question3" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   3. What's the process for disconnection?
                 </h3>
@@ -127,7 +241,7 @@ export default function RelocationDisconnection() {
               </div>
 
               {/* Question 4 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question4" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   4. How long does relocation take?
                 </h3>
@@ -143,7 +257,7 @@ export default function RelocationDisconnection() {
               </div>
 
               {/* Question 5 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question5" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   5. Are there any charges for closure?
                 </h3>

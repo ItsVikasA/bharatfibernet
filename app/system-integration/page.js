@@ -288,8 +288,8 @@ const page = () => {
           </div>
 
           {/* Real-Time Monitoring That Prevents Problems */}
-          <div className="row mb-5 align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="row mb-5">
+            <div className="col-lg-10 offset-lg-0">
               <div className="content-block">
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Real-Time Monitoring That Prevents Problems
@@ -299,17 +299,12 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div style={{maxWidth: '400px', margin: '0 auto'}}>
-                <LottieAnimation url={animations.monitoring} />
-              </div>
-            </div>
           </div>
 
           {/* Predictive Maintenance for Maximum Uptime */}
-          <div className="row mb-5 align-items-center">
-            <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-              <div className="content-block" style={{textAlign: 'left'}}>
+          <div className="row mb-5">
+            <div className="col-lg-10 offset-lg-2">
+              <div className="content-block" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Predictive Maintenance for Maximum Uptime
                 </h3>
@@ -318,16 +313,11 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 order-lg-1">
-              <div style={{maxWidth: '400px', margin: '0 auto'}}>
-                <LottieAnimation url={animations.maintenance} />
-              </div>
-            </div>
           </div>
 
           {/* Compliance and Security at Every Layer */}
-          <div className="row mb-5 align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="row mb-5">
+            <div className="col-lg-10 offset-lg-0">
               <div className="content-block">
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Compliance and Security at Every Layer
@@ -337,17 +327,12 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div style={{maxWidth: '400px', margin: '0 auto'}}>
-                <LottieAnimation url={animations.security} />
-              </div>
-            </div>
           </div>
 
           {/* Scalability Without Downtime */}
-          <div className="row mb-5 align-items-center">
-            <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-              <div className="content-block" style={{textAlign: 'left'}}>
+          <div className="row mb-5">
+            <div className="col-lg-10 offset-lg-2">
+              <div className="content-block" style={{textAlign: 'right'}}>
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Scalability Without Downtime
                 </h3>
@@ -356,16 +341,11 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 order-lg-1">
-              <div style={{maxWidth: '400px', margin: '0 auto'}}>
-                <LottieAnimation url={animations.scalability} />
-              </div>
-            </div>
           </div>
 
           {/* Dedicated 24×7 Expert Support */}
-          <div className="row align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="row">
+            <div className="col-lg-10 offset-lg-0">
               <div className="content-block">
                 <h3 className="mb-4" style={{fontWeight: '700', fontSize: '1.5rem'}}>
                   Dedicated 24×7 Expert Support
@@ -373,11 +353,6 @@ const page = () => {
                 <p style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
                   Round-the-clock technical assistance ensures issues are addressed promptly by certified professionals. Continuous monitoring and a responsive support framework guarantee consistent service quality, minimized downtime, and reliable access to help whenever required.
                 </p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div style={{maxWidth: '400px', margin: '0 auto'}}>
-                <LottieAnimation url={animations.support} />
               </div>
             </div>
           </div>

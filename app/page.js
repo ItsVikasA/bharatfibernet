@@ -1239,7 +1239,7 @@ const page = () => {
     {/* Heading */}
     <div className="section-title text-center mb-5">
       <h2 className="wow fadeInUp" data-wow-delay=".2s" style={{ 
-        color: 'var(--theme)',
+        color: '#1a1a1a',
         fontWeight: '700'
       }}>
         What Industry Leaders Are Saying

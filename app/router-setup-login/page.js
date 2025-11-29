@@ -13,31 +13,145 @@ export default function RouterSetupLogin() {
 
       {/* Header Section */}
       <section className="section-padding" style={{ 
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/assets/img/1.jpg)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/assets/img/1.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}>
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center">
-              <h1 style={{ fontSize: '3.5rem', fontWeight: '700', marginBottom: '2rem' }}>
-                Bharat Fibernet Help Guide
-              </h1>
-              
-              <h2 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '3rem', color: '#333' }}>
+            <div className="col-12 text-center mb-5">
+              <h1 style={{ fontSize: '3rem', fontWeight: '700', marginBottom: '2rem', color: '#1a1a1a' }}>
                 Let's set up your router the right way.
-              </h2>
-              
-              <p style={{ 
-                fontSize: '1.1rem', 
-                lineHeight: '1.8', 
-                color: '#333', 
-                maxWidth: '1000px', 
-                margin: '0 auto'
+              </h1>
+            </div>
+          </div>
+
+          {/* FAQ Buttons */}
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div style={{
+                display: 'flex',
+                gap: '1rem',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                marginBottom: '3rem'
               }}>
-                Whether you're setting up a new router, fixing login issues, or just need to find your Wi-Fi password — this guide keeps it simple and clear.
-              </p>
+                <a href="#question1" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      How do I set up my new router?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question2" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      What's my Wi-Fi password?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question3" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      How can I log in to my router?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question4" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      Why can't I connect to Wi-Fi?
+                    </p>
+                  </div>
+                </a>
+
+                <a href="#question5" style={{ textDecoration: 'none', flex: '1 1 18%', minWidth: '180px' }}>
+                  <div style={{
+                    background: '#d4e8f7',
+                    padding: '2rem 1.5rem',
+                    borderRadius: '15px',
+                    border: '2px solid #333',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    height: '100%'
+                  }}>
+                    <p style={{ 
+                      fontSize: '1.05rem', 
+                      fontWeight: '500',
+                      color: '#1a1a1a',
+                      marginBottom: '0',
+                      lineHeight: '1.4'
+                    }}>
+                      How do I reset my router?
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -55,7 +169,7 @@ export default function RouterSetupLogin() {
             <div className="col-lg-10">
               
               {/* Question 1 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question1" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   1. How do I set up my new router?
                 </h3>
@@ -84,7 +198,7 @@ export default function RouterSetupLogin() {
               </div>
 
               {/* Question 2 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question2" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   2. What's my Wi-Fi password?
                 </h3>
@@ -106,7 +220,7 @@ export default function RouterSetupLogin() {
               </div>
 
               {/* Question 3 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question3" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   3. How can I log in to my router?
                 </h3>
@@ -124,7 +238,7 @@ export default function RouterSetupLogin() {
               </div>
 
               {/* Question 4 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question4" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   4. Why can't I connect to Wi-Fi?
                 </h3>
@@ -146,7 +260,7 @@ export default function RouterSetupLogin() {
               </div>
 
               {/* Question 5 */}
-              <div style={{ marginBottom: '4rem' }}>
+              <div id="question5" style={{ marginBottom: '4rem', scrollMarginTop: '100px' }}>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem' }}>
                   5. How do I reset my router?
                 </h3>
