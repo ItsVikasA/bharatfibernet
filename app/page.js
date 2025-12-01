@@ -12,7 +12,7 @@ import GuidanceForm from "@/components/GuidanceForm";
 
 
 const page = () => {
-  const [activeTab, setActiveTab] = useState('corporate');
+  const [activeTab, setActiveTab] = useState('business');
 
   return (
     <NextLayout header={1}>
