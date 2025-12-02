@@ -149,7 +149,7 @@ export default function CRM() {
               <h3 style={{ fontSize: '2.5rem', fontWeight: '400', lineHeight: '1.4', marginBottom: '0.5rem' , color: '#1a1a1a'}}>
                 One platform. Limitless possibilities.
               </h3>
-              <div style={{ marginTop: '1rem' }}:
+              <div style={{ marginTop: '1rem' }}>
                 <Link href="/contact">
                   <button style={{
                     padding: '15px 40px',

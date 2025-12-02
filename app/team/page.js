@@ -180,39 +180,6 @@ const page = () => {
                 </div>
               </div>
             </div>
-                  <div className="icon-list">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-pinterest-p" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="team-content">
-                  <h4>
-                    <Link href="team-details">Theodore E. Johnson</Link>
-                  </h4>
-                  <p>Manager</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
