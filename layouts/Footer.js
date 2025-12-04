@@ -66,7 +66,7 @@ const Footer1 = () => {
                   <br />
                   Phase 2, Madhapur, Hyderabad,
                   <br />
-                  Telangana 500083
+                  Telangana 500033
                 </p>
               </div>
             </div>

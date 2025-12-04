@@ -543,7 +543,7 @@ const Page = () => {
                     Kavuri Hills, Phase 2<br />
                     Madhapur<br />
                     Hyderabad, Telangana<br />
-                    500083
+                    500033
                   </p>
                 </div>
 
